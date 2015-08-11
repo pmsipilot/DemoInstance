@@ -1,4 +1,0 @@
-python-novaclient
-sqlalchemy
-mysql-python 
-python-ldap

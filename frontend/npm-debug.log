@@ -1,0 +1,1530 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.40
+4 verbose node symlink /usr/bin/node
+5 warn package.json demoninstance@2.1.0 No README data
+6 verbose readDependencies using package.json deps
+7 verbose install where, deps [ '/home/ABC-OBJECTIF/cyprien.diot/demoinstance/frontend',
+7 verbose install   [ 'angular',
+7 verbose install     'angular-route',
+7 verbose install     'angular-resource',
+7 verbose install     'angular-translate',
+7 verbose install     'angular-slider',
+7 verbose install     'angular-cookies',
+7 verbose install     'bootstrap',
+7 verbose install     'jquery',
+7 verbose install     'favico.js',
+7 verbose install     'components-font-awesome',
+7 verbose install     'ng-table',
+7 verbose install     'angular-xeditable',
+7 verbose install     'gulp',
+7 verbose install     'gulp-concat',
+7 verbose install     'gulp-jshint',
+7 verbose install     'gulp-util',
+7 verbose install     'jshint-stylish' ] ]
+8 info preinstall demoninstance@2.1.0
+9 verbose readDependencies using package.json deps
+10 verbose cache add [ 'angular-resource@~1.2.x', null ]
+11 verbose cache add name=undefined spec="angular-resource@~1.2.x" args=["angular-resource@~1.2.x",null]
+12 verbose parsed url { protocol: null,
+12 verbose parsed url   slashes: null,
+12 verbose parsed url   auth: null,
+12 verbose parsed url   host: null,
+12 verbose parsed url   port: null,
+12 verbose parsed url   hostname: null,
+12 verbose parsed url   hash: null,
+12 verbose parsed url   search: null,
+12 verbose parsed url   query: null,
+12 verbose parsed url   pathname: 'angular-resource@~1.2.x',
+12 verbose parsed url   path: 'angular-resource@~1.2.x',
+12 verbose parsed url   href: 'angular-resource@~1.2.x' }
+13 verbose cache add name="angular-resource" spec="~1.2.x" args=["angular-resource","~1.2.x"]
+14 verbose parsed url { protocol: null,
+14 verbose parsed url   slashes: null,
+14 verbose parsed url   auth: null,
+14 verbose parsed url   host: null,
+14 verbose parsed url   port: null,
+14 verbose parsed url   hostname: null,
+14 verbose parsed url   hash: null,
+14 verbose parsed url   search: null,
+14 verbose parsed url   query: null,
+14 verbose parsed url   pathname: '~1.2.x',
+14 verbose parsed url   path: '~1.2.x',
+14 verbose parsed url   href: '~1.2.x' }
+15 verbose addNamed [ 'angular-resource', '~1.2.x' ]
+16 verbose addNamed [ null, '>=1.2.0-0 <1.3.0-0' ]
+17 verbose cache add [ 'angular-translate@~2.4.x', null ]
+18 verbose cache add name=undefined spec="angular-translate@~2.4.x" args=["angular-translate@~2.4.x",null]
+19 verbose parsed url { protocol: null,
+19 verbose parsed url   slashes: null,
+19 verbose parsed url   auth: null,
+19 verbose parsed url   host: null,
+19 verbose parsed url   port: null,
+19 verbose parsed url   hostname: null,
+19 verbose parsed url   hash: null,
+19 verbose parsed url   search: null,
+19 verbose parsed url   query: null,
+19 verbose parsed url   pathname: 'angular-translate@~2.4.x',
+19 verbose parsed url   path: 'angular-translate@~2.4.x',
+19 verbose parsed url   href: 'angular-translate@~2.4.x' }
+20 silly lockFile 77c931e9-angular-resource-1-2-x angular-resource@~1.2.x
+21 verbose lock angular-resource@~1.2.x /home/ABC-OBJECTIF/cyprien.diot/.npm/77c931e9-angular-resource-1-2-x.lock
+22 verbose cache add name="angular-translate" spec="~2.4.x" args=["angular-translate","~2.4.x"]
+23 verbose parsed url { protocol: null,
+23 verbose parsed url   slashes: null,
+23 verbose parsed url   auth: null,
+23 verbose parsed url   host: null,
+23 verbose parsed url   port: null,
+23 verbose parsed url   hostname: null,
+23 verbose parsed url   hash: null,
+23 verbose parsed url   search: null,
+23 verbose parsed url   query: null,
+23 verbose parsed url   pathname: '~2.4.x',
+23 verbose parsed url   path: '~2.4.x',
+23 verbose parsed url   href: '~2.4.x' }
+24 verbose addNamed [ 'angular-translate', '~2.4.x' ]
+25 verbose addNamed [ null, '>=2.4.0-0 <2.5.0-0' ]
+26 silly lockFile b41fc687-angular-translate-2-4-x angular-translate@~2.4.x
+27 verbose lock angular-translate@~2.4.x /home/ABC-OBJECTIF/cyprien.diot/.npm/b41fc687-angular-translate-2-4-x.lock
+28 verbose cache add [ 'angular-slider@v0.2.3', null ]
+29 verbose cache add name=undefined spec="angular-slider@v0.2.3" args=["angular-slider@v0.2.3",null]
+30 verbose parsed url { protocol: null,
+30 verbose parsed url   slashes: null,
+30 verbose parsed url   auth: null,
+30 verbose parsed url   host: null,
+30 verbose parsed url   port: null,
+30 verbose parsed url   hostname: null,
+30 verbose parsed url   hash: null,
+30 verbose parsed url   search: null,
+30 verbose parsed url   query: null,
+30 verbose parsed url   pathname: 'angular-slider@v0.2.3',
+30 verbose parsed url   path: 'angular-slider@v0.2.3',
+30 verbose parsed url   href: 'angular-slider@v0.2.3' }
+31 verbose cache add name="angular-slider" spec="v0.2.3" args=["angular-slider","v0.2.3"]
+32 verbose parsed url { protocol: null,
+32 verbose parsed url   slashes: null,
+32 verbose parsed url   auth: null,
+32 verbose parsed url   host: null,
+32 verbose parsed url   port: null,
+32 verbose parsed url   hostname: null,
+32 verbose parsed url   hash: null,
+32 verbose parsed url   search: null,
+32 verbose parsed url   query: null,
+32 verbose parsed url   pathname: 'v0.2.3',
+32 verbose parsed url   path: 'v0.2.3',
+32 verbose parsed url   href: 'v0.2.3' }
+33 verbose addNamed [ 'angular-slider', 'v0.2.3' ]
+34 verbose addNamed [ '0.2.3', '0.2.3' ]
+35 silly lockFile 102def9b-angular-slider-v0-2-3 angular-slider@v0.2.3
+36 verbose lock angular-slider@v0.2.3 /home/ABC-OBJECTIF/cyprien.diot/.npm/102def9b-angular-slider-v0-2-3.lock
+37 silly addNameRange { name: 'angular-resource',
+37 silly addNameRange   range: '>=1.2.0-0 <1.3.0-0',
+37 silly addNameRange   hasData: false }
+38 silly addNameRange { name: 'angular-translate',
+38 silly addNameRange   range: '>=2.4.0-0 <2.5.0-0',
+38 silly addNameRange   hasData: false }
+39 verbose cache add [ 'angular-cookies@~1.2.x', null ]
+40 verbose cache add name=undefined spec="angular-cookies@~1.2.x" args=["angular-cookies@~1.2.x",null]
+41 verbose parsed url { protocol: null,
+41 verbose parsed url   slashes: null,
+41 verbose parsed url   auth: null,
+41 verbose parsed url   host: null,
+41 verbose parsed url   port: null,
+41 verbose parsed url   hostname: null,
+41 verbose parsed url   hash: null,
+41 verbose parsed url   search: null,
+41 verbose parsed url   query: null,
+41 verbose parsed url   pathname: 'angular-cookies@~1.2.x',
+41 verbose parsed url   path: 'angular-cookies@~1.2.x',
+41 verbose parsed url   href: 'angular-cookies@~1.2.x' }
+42 verbose cache add [ 'bootstrap@3.1.1', null ]
+43 verbose cache add name=undefined spec="bootstrap@3.1.1" args=["bootstrap@3.1.1",null]
+44 verbose parsed url { protocol: null,
+44 verbose parsed url   slashes: null,
+44 verbose parsed url   auth: null,
+44 verbose parsed url   host: null,
+44 verbose parsed url   port: null,
+44 verbose parsed url   hostname: null,
+44 verbose parsed url   hash: null,
+44 verbose parsed url   search: null,
+44 verbose parsed url   query: null,
+44 verbose parsed url   pathname: 'bootstrap@3.1.1',
+44 verbose parsed url   path: 'bootstrap@3.1.1',
+44 verbose parsed url   href: 'bootstrap@3.1.1' }
+45 verbose cache add [ 'jquery@2.1.0', null ]
+46 verbose cache add name=undefined spec="jquery@2.1.0" args=["jquery@2.1.0",null]
+47 verbose parsed url { protocol: null,
+47 verbose parsed url   slashes: null,
+47 verbose parsed url   auth: null,
+47 verbose parsed url   host: null,
+47 verbose parsed url   port: null,
+47 verbose parsed url   hostname: null,
+47 verbose parsed url   hash: null,
+47 verbose parsed url   search: null,
+47 verbose parsed url   query: null,
+47 verbose parsed url   pathname: 'jquery@2.1.0',
+47 verbose parsed url   path: 'jquery@2.1.0',
+47 verbose parsed url   href: 'jquery@2.1.0' }
+48 verbose cache add [ 'favico.js@0.3.9', null ]
+49 verbose cache add name=undefined spec="favico.js@0.3.9" args=["favico.js@0.3.9",null]
+50 verbose parsed url { protocol: null,
+50 verbose parsed url   slashes: null,
+50 verbose parsed url   auth: null,
+50 verbose parsed url   host: null,
+50 verbose parsed url   port: null,
+50 verbose parsed url   hostname: null,
+50 verbose parsed url   hash: null,
+50 verbose parsed url   search: null,
+50 verbose parsed url   query: null,
+50 verbose parsed url   pathname: 'favico.js@0.3.9',
+50 verbose parsed url   path: 'favico.js@0.3.9',
+50 verbose parsed url   href: 'favico.js@0.3.9' }
+51 verbose cache add name="angular-cookies" spec="~1.2.x" args=["angular-cookies","~1.2.x"]
+52 verbose parsed url { protocol: null,
+52 verbose parsed url   slashes: null,
+52 verbose parsed url   auth: null,
+52 verbose parsed url   host: null,
+52 verbose parsed url   port: null,
+52 verbose parsed url   hostname: null,
+52 verbose parsed url   hash: null,
+52 verbose parsed url   search: null,
+52 verbose parsed url   query: null,
+52 verbose parsed url   pathname: '~1.2.x',
+52 verbose parsed url   path: '~1.2.x',
+52 verbose parsed url   href: '~1.2.x' }
+53 verbose addNamed [ 'angular-cookies', '~1.2.x' ]
+54 verbose addNamed [ null, '>=1.2.0-0 <1.3.0-0' ]
+55 silly lockFile 87daa9c9-angular-cookies-1-2-x angular-cookies@~1.2.x
+56 verbose lock angular-cookies@~1.2.x /home/ABC-OBJECTIF/cyprien.diot/.npm/87daa9c9-angular-cookies-1-2-x.lock
+57 verbose cache add name="bootstrap" spec="3.1.1" args=["bootstrap","3.1.1"]
+58 verbose parsed url { protocol: null,
+58 verbose parsed url   slashes: null,
+58 verbose parsed url   auth: null,
+58 verbose parsed url   host: null,
+58 verbose parsed url   port: null,
+58 verbose parsed url   hostname: null,
+58 verbose parsed url   hash: null,
+58 verbose parsed url   search: null,
+58 verbose parsed url   query: null,
+58 verbose parsed url   pathname: '3.1.1',
+58 verbose parsed url   path: '3.1.1',
+58 verbose parsed url   href: '3.1.1' }
+59 verbose addNamed [ 'bootstrap', '3.1.1' ]
+60 verbose addNamed [ '3.1.1', '3.1.1' ]
+61 silly lockFile 59eb343d-bootstrap-3-1-1 bootstrap@3.1.1
+62 verbose lock bootstrap@3.1.1 /home/ABC-OBJECTIF/cyprien.diot/.npm/59eb343d-bootstrap-3-1-1.lock
+63 verbose cache add name="jquery" spec="2.1.0" args=["jquery","2.1.0"]
+64 verbose parsed url { protocol: null,
+64 verbose parsed url   slashes: null,
+64 verbose parsed url   auth: null,
+64 verbose parsed url   host: null,
+64 verbose parsed url   port: null,
+64 verbose parsed url   hostname: null,
+64 verbose parsed url   hash: null,
+64 verbose parsed url   search: null,
+64 verbose parsed url   query: null,
+64 verbose parsed url   pathname: '2.1.0',
+64 verbose parsed url   path: '2.1.0',
+64 verbose parsed url   href: '2.1.0' }
+65 verbose addNamed [ 'jquery', '2.1.0' ]
+66 verbose addNamed [ '2.1.0', '2.1.0' ]
+67 silly lockFile c0b66f62-jquery-2-1-0 jquery@2.1.0
+68 verbose lock jquery@2.1.0 /home/ABC-OBJECTIF/cyprien.diot/.npm/c0b66f62-jquery-2-1-0.lock
+69 verbose cache add name="favico.js" spec="0.3.9" args=["favico.js","0.3.9"]
+70 verbose parsed url { protocol: null,
+70 verbose parsed url   slashes: null,
+70 verbose parsed url   auth: null,
+70 verbose parsed url   host: null,
+70 verbose parsed url   port: null,
+70 verbose parsed url   hostname: null,
+70 verbose parsed url   hash: null,
+70 verbose parsed url   search: null,
+70 verbose parsed url   query: null,
+70 verbose parsed url   pathname: '0.3.9',
+70 verbose parsed url   path: '0.3.9',
+70 verbose parsed url   href: '0.3.9' }
+71 verbose addNamed [ 'favico.js', '0.3.9' ]
+72 verbose addNamed [ '0.3.9', '0.3.9' ]
+73 silly lockFile d1aa2619-favico-js-0-3-9 favico.js@0.3.9
+74 verbose lock favico.js@0.3.9 /home/ABC-OBJECTIF/cyprien.diot/.npm/d1aa2619-favico-js-0-3-9.lock
+75 verbose cache add [ 'components-font-awesome@4.2.0', null ]
+76 verbose cache add name=undefined spec="components-font-awesome@4.2.0" args=["components-font-awesome@4.2.0",null]
+77 verbose parsed url { protocol: null,
+77 verbose parsed url   slashes: null,
+77 verbose parsed url   auth: null,
+77 verbose parsed url   host: null,
+77 verbose parsed url   port: null,
+77 verbose parsed url   hostname: null,
+77 verbose parsed url   hash: null,
+77 verbose parsed url   search: null,
+77 verbose parsed url   query: null,
+77 verbose parsed url   pathname: 'components-font-awesome@4.2.0',
+77 verbose parsed url   path: 'components-font-awesome@4.2.0',
+77 verbose parsed url   href: 'components-font-awesome@4.2.0' }
+78 verbose cache add [ 'ng-table@0.5.4', null ]
+79 verbose cache add name=undefined spec="ng-table@0.5.4" args=["ng-table@0.5.4",null]
+80 verbose parsed url { protocol: null,
+80 verbose parsed url   slashes: null,
+80 verbose parsed url   auth: null,
+80 verbose parsed url   host: null,
+80 verbose parsed url   port: null,
+80 verbose parsed url   hostname: null,
+80 verbose parsed url   hash: null,
+80 verbose parsed url   search: null,
+80 verbose parsed url   query: null,
+80 verbose parsed url   pathname: 'ng-table@0.5.4',
+80 verbose parsed url   path: 'ng-table@0.5.4',
+80 verbose parsed url   href: 'ng-table@0.5.4' }
+81 verbose cache add [ 'angular-xeditable@0.1.8', null ]
+82 verbose cache add name=undefined spec="angular-xeditable@0.1.8" args=["angular-xeditable@0.1.8",null]
+83 verbose parsed url { protocol: null,
+83 verbose parsed url   slashes: null,
+83 verbose parsed url   auth: null,
+83 verbose parsed url   host: null,
+83 verbose parsed url   port: null,
+83 verbose parsed url   hostname: null,
+83 verbose parsed url   hash: null,
+83 verbose parsed url   search: null,
+83 verbose parsed url   query: null,
+83 verbose parsed url   pathname: 'angular-xeditable@0.1.8',
+83 verbose parsed url   path: 'angular-xeditable@0.1.8',
+83 verbose parsed url   href: 'angular-xeditable@0.1.8' }
+84 verbose cache add name="components-font-awesome" spec="4.2.0" args=["components-font-awesome","4.2.0"]
+85 verbose parsed url { protocol: null,
+85 verbose parsed url   slashes: null,
+85 verbose parsed url   auth: null,
+85 verbose parsed url   host: null,
+85 verbose parsed url   port: null,
+85 verbose parsed url   hostname: null,
+85 verbose parsed url   hash: null,
+85 verbose parsed url   search: null,
+85 verbose parsed url   query: null,
+85 verbose parsed url   pathname: '4.2.0',
+85 verbose parsed url   path: '4.2.0',
+85 verbose parsed url   href: '4.2.0' }
+86 verbose addNamed [ 'components-font-awesome', '4.2.0' ]
+87 verbose addNamed [ '4.2.0', '4.2.0' ]
+88 silly lockFile 5b7d9bce-components-font-awesome-4-2-0 components-font-awesome@4.2.0
+89 verbose lock components-font-awesome@4.2.0 /home/ABC-OBJECTIF/cyprien.diot/.npm/5b7d9bce-components-font-awesome-4-2-0.lock
+90 verbose cache add name="ng-table" spec="0.5.4" args=["ng-table","0.5.4"]
+91 verbose parsed url { protocol: null,
+91 verbose parsed url   slashes: null,
+91 verbose parsed url   auth: null,
+91 verbose parsed url   host: null,
+91 verbose parsed url   port: null,
+91 verbose parsed url   hostname: null,
+91 verbose parsed url   hash: null,
+91 verbose parsed url   search: null,
+91 verbose parsed url   query: null,
+91 verbose parsed url   pathname: '0.5.4',
+91 verbose parsed url   path: '0.5.4',
+91 verbose parsed url   href: '0.5.4' }
+92 verbose addNamed [ 'ng-table', '0.5.4' ]
+93 verbose addNamed [ '0.5.4', '0.5.4' ]
+94 silly lockFile b4386444-ng-table-0-5-4 ng-table@0.5.4
+95 verbose lock ng-table@0.5.4 /home/ABC-OBJECTIF/cyprien.diot/.npm/b4386444-ng-table-0-5-4.lock
+96 verbose cache add [ 'gulp@^3.9.0', null ]
+97 verbose cache add name=undefined spec="gulp@^3.9.0" args=["gulp@^3.9.0",null]
+98 verbose parsed url { protocol: null,
+98 verbose parsed url   slashes: null,
+98 verbose parsed url   auth: null,
+98 verbose parsed url   host: null,
+98 verbose parsed url   port: null,
+98 verbose parsed url   hostname: null,
+98 verbose parsed url   hash: null,
+98 verbose parsed url   search: null,
+98 verbose parsed url   query: null,
+98 verbose parsed url   pathname: 'gulp@^3.9.0',
+98 verbose parsed url   path: 'gulp@^3.9.0',
+98 verbose parsed url   href: 'gulp@^3.9.0' }
+99 verbose cache add [ 'gulp-concat@^2.5.2', null ]
+100 verbose cache add name=undefined spec="gulp-concat@^2.5.2" args=["gulp-concat@^2.5.2",null]
+101 verbose parsed url { protocol: null,
+101 verbose parsed url   slashes: null,
+101 verbose parsed url   auth: null,
+101 verbose parsed url   host: null,
+101 verbose parsed url   port: null,
+101 verbose parsed url   hostname: null,
+101 verbose parsed url   hash: null,
+101 verbose parsed url   search: null,
+101 verbose parsed url   query: null,
+101 verbose parsed url   pathname: 'gulp-concat@^2.5.2',
+101 verbose parsed url   path: 'gulp-concat@^2.5.2',
+101 verbose parsed url   href: 'gulp-concat@^2.5.2' }
+102 verbose cache add name="angular-xeditable" spec="0.1.8" args=["angular-xeditable","0.1.8"]
+103 verbose parsed url { protocol: null,
+103 verbose parsed url   slashes: null,
+103 verbose parsed url   auth: null,
+103 verbose parsed url   host: null,
+103 verbose parsed url   port: null,
+103 verbose parsed url   hostname: null,
+103 verbose parsed url   hash: null,
+103 verbose parsed url   search: null,
+103 verbose parsed url   query: null,
+103 verbose parsed url   pathname: '0.1.8',
+103 verbose parsed url   path: '0.1.8',
+103 verbose parsed url   href: '0.1.8' }
+104 verbose addNamed [ 'angular-xeditable', '0.1.8' ]
+105 verbose addNamed [ '0.1.8', '0.1.8' ]
+106 silly lockFile 1c6993b1-angular-xeditable-0-1-8 angular-xeditable@0.1.8
+107 verbose lock angular-xeditable@0.1.8 /home/ABC-OBJECTIF/cyprien.diot/.npm/1c6993b1-angular-xeditable-0-1-8.lock
+108 silly addNameRange { name: 'angular-cookies',
+108 silly addNameRange   range: '>=1.2.0-0 <1.3.0-0',
+108 silly addNameRange   hasData: false }
+109 verbose cache add name="gulp" spec="^3.9.0" args=["gulp","^3.9.0"]
+110 verbose parsed url { protocol: null,
+110 verbose parsed url   slashes: null,
+110 verbose parsed url   auth: null,
+110 verbose parsed url   host: null,
+110 verbose parsed url   port: null,
+110 verbose parsed url   hostname: null,
+110 verbose parsed url   hash: null,
+110 verbose parsed url   search: null,
+110 verbose parsed url   query: null,
+110 verbose parsed url   pathname: '^3.9.0',
+110 verbose parsed url   path: '^3.9.0',
+110 verbose parsed url   href: '^3.9.0' }
+111 verbose addNamed [ 'gulp', '^3.9.0' ]
+112 verbose addNamed [ null, '>=3.9.0-0 <4.0.0-0' ]
+113 silly lockFile a7ccee77-gulp-3-9-0 gulp@^3.9.0
+114 verbose lock gulp@^3.9.0 /home/ABC-OBJECTIF/cyprien.diot/.npm/a7ccee77-gulp-3-9-0.lock
+115 verbose cache add [ 'gulp-jshint@^1.9.4', null ]
+116 verbose cache add name=undefined spec="gulp-jshint@^1.9.4" args=["gulp-jshint@^1.9.4",null]
+117 verbose parsed url { protocol: null,
+117 verbose parsed url   slashes: null,
+117 verbose parsed url   auth: null,
+117 verbose parsed url   host: null,
+117 verbose parsed url   port: null,
+117 verbose parsed url   hostname: null,
+117 verbose parsed url   hash: null,
+117 verbose parsed url   search: null,
+117 verbose parsed url   query: null,
+117 verbose parsed url   pathname: 'gulp-jshint@^1.9.4',
+117 verbose parsed url   path: 'gulp-jshint@^1.9.4',
+117 verbose parsed url   href: 'gulp-jshint@^1.9.4' }
+118 verbose cache add [ 'gulp-util@^3.0.4', null ]
+119 verbose cache add name=undefined spec="gulp-util@^3.0.4" args=["gulp-util@^3.0.4",null]
+120 verbose parsed url { protocol: null,
+120 verbose parsed url   slashes: null,
+120 verbose parsed url   auth: null,
+120 verbose parsed url   host: null,
+120 verbose parsed url   port: null,
+120 verbose parsed url   hostname: null,
+120 verbose parsed url   hash: null,
+120 verbose parsed url   search: null,
+120 verbose parsed url   query: null,
+120 verbose parsed url   pathname: 'gulp-util@^3.0.4',
+120 verbose parsed url   path: 'gulp-util@^3.0.4',
+120 verbose parsed url   href: 'gulp-util@^3.0.4' }
+121 verbose cache add [ 'jshint-stylish@^1.0.1', null ]
+122 verbose cache add name=undefined spec="jshint-stylish@^1.0.1" args=["jshint-stylish@^1.0.1",null]
+123 verbose parsed url { protocol: null,
+123 verbose parsed url   slashes: null,
+123 verbose parsed url   auth: null,
+123 verbose parsed url   host: null,
+123 verbose parsed url   port: null,
+123 verbose parsed url   hostname: null,
+123 verbose parsed url   hash: null,
+123 verbose parsed url   search: null,
+123 verbose parsed url   query: null,
+123 verbose parsed url   pathname: 'jshint-stylish@^1.0.1',
+123 verbose parsed url   path: 'jshint-stylish@^1.0.1',
+123 verbose parsed url   href: 'jshint-stylish@^1.0.1' }
+124 verbose cache add [ 'angular@~1.2.x', null ]
+125 verbose cache add name=undefined spec="angular@~1.2.x" args=["angular@~1.2.x",null]
+126 verbose parsed url { protocol: null,
+126 verbose parsed url   slashes: null,
+126 verbose parsed url   auth: null,
+126 verbose parsed url   host: null,
+126 verbose parsed url   port: null,
+126 verbose parsed url   hostname: null,
+126 verbose parsed url   hash: null,
+126 verbose parsed url   search: null,
+126 verbose parsed url   query: null,
+126 verbose parsed url   pathname: 'angular@~1.2.x',
+126 verbose parsed url   path: 'angular@~1.2.x',
+126 verbose parsed url   href: 'angular@~1.2.x' }
+127 verbose cache add [ 'angular-route@~1.2.x', null ]
+128 verbose cache add name=undefined spec="angular-route@~1.2.x" args=["angular-route@~1.2.x",null]
+129 verbose parsed url { protocol: null,
+129 verbose parsed url   slashes: null,
+129 verbose parsed url   auth: null,
+129 verbose parsed url   host: null,
+129 verbose parsed url   port: null,
+129 verbose parsed url   hostname: null,
+129 verbose parsed url   hash: null,
+129 verbose parsed url   search: null,
+129 verbose parsed url   query: null,
+129 verbose parsed url   pathname: 'angular-route@~1.2.x',
+129 verbose parsed url   path: 'angular-route@~1.2.x',
+129 verbose parsed url   href: 'angular-route@~1.2.x' }
+130 verbose cache add name="gulp-concat" spec="^2.5.2" args=["gulp-concat","^2.5.2"]
+131 verbose parsed url { protocol: null,
+131 verbose parsed url   slashes: null,
+131 verbose parsed url   auth: null,
+131 verbose parsed url   host: null,
+131 verbose parsed url   port: null,
+131 verbose parsed url   hostname: null,
+131 verbose parsed url   hash: null,
+131 verbose parsed url   search: null,
+131 verbose parsed url   query: null,
+131 verbose parsed url   pathname: '^2.5.2',
+131 verbose parsed url   path: '^2.5.2',
+131 verbose parsed url   href: '^2.5.2' }
+132 verbose addNamed [ 'gulp-concat', '^2.5.2' ]
+133 verbose addNamed [ null, '>=2.5.2-0 <3.0.0-0' ]
+134 silly lockFile 60a235d6-gulp-concat-2-5-2 gulp-concat@^2.5.2
+135 verbose lock gulp-concat@^2.5.2 /home/ABC-OBJECTIF/cyprien.diot/.npm/60a235d6-gulp-concat-2-5-2.lock
+136 verbose cache add name="gulp-jshint" spec="^1.9.4" args=["gulp-jshint","^1.9.4"]
+137 verbose parsed url { protocol: null,
+137 verbose parsed url   slashes: null,
+137 verbose parsed url   auth: null,
+137 verbose parsed url   host: null,
+137 verbose parsed url   port: null,
+137 verbose parsed url   hostname: null,
+137 verbose parsed url   hash: null,
+137 verbose parsed url   search: null,
+137 verbose parsed url   query: null,
+137 verbose parsed url   pathname: '^1.9.4',
+137 verbose parsed url   path: '^1.9.4',
+137 verbose parsed url   href: '^1.9.4' }
+138 verbose addNamed [ 'gulp-jshint', '^1.9.4' ]
+139 verbose addNamed [ null, '>=1.9.4-0 <2.0.0-0' ]
+140 silly lockFile 355207cc-gulp-jshint-1-9-4 gulp-jshint@^1.9.4
+141 verbose lock gulp-jshint@^1.9.4 /home/ABC-OBJECTIF/cyprien.diot/.npm/355207cc-gulp-jshint-1-9-4.lock
+142 verbose cache add name="gulp-util" spec="^3.0.4" args=["gulp-util","^3.0.4"]
+143 verbose parsed url { protocol: null,
+143 verbose parsed url   slashes: null,
+143 verbose parsed url   auth: null,
+143 verbose parsed url   host: null,
+143 verbose parsed url   port: null,
+143 verbose parsed url   hostname: null,
+143 verbose parsed url   hash: null,
+143 verbose parsed url   search: null,
+143 verbose parsed url   query: null,
+143 verbose parsed url   pathname: '^3.0.4',
+143 verbose parsed url   path: '^3.0.4',
+143 verbose parsed url   href: '^3.0.4' }
+144 verbose addNamed [ 'gulp-util', '^3.0.4' ]
+145 verbose addNamed [ null, '>=3.0.4-0 <4.0.0-0' ]
+146 silly lockFile f8ceac1d-gulp-util-3-0-4 gulp-util@^3.0.4
+147 verbose lock gulp-util@^3.0.4 /home/ABC-OBJECTIF/cyprien.diot/.npm/f8ceac1d-gulp-util-3-0-4.lock
+148 verbose cache add name="jshint-stylish" spec="^1.0.1" args=["jshint-stylish","^1.0.1"]
+149 verbose parsed url { protocol: null,
+149 verbose parsed url   slashes: null,
+149 verbose parsed url   auth: null,
+149 verbose parsed url   host: null,
+149 verbose parsed url   port: null,
+149 verbose parsed url   hostname: null,
+149 verbose parsed url   hash: null,
+149 verbose parsed url   search: null,
+149 verbose parsed url   query: null,
+149 verbose parsed url   pathname: '^1.0.1',
+149 verbose parsed url   path: '^1.0.1',
+149 verbose parsed url   href: '^1.0.1' }
+150 verbose addNamed [ 'jshint-stylish', '^1.0.1' ]
+151 verbose addNamed [ null, '>=1.0.1-0 <2.0.0-0' ]
+152 silly lockFile 8db2777f-jshint-stylish-1-0-1 jshint-stylish@^1.0.1
+153 verbose lock jshint-stylish@^1.0.1 /home/ABC-OBJECTIF/cyprien.diot/.npm/8db2777f-jshint-stylish-1-0-1.lock
+154 verbose cache add name="angular" spec="~1.2.x" args=["angular","~1.2.x"]
+155 verbose parsed url { protocol: null,
+155 verbose parsed url   slashes: null,
+155 verbose parsed url   auth: null,
+155 verbose parsed url   host: null,
+155 verbose parsed url   port: null,
+155 verbose parsed url   hostname: null,
+155 verbose parsed url   hash: null,
+155 verbose parsed url   search: null,
+155 verbose parsed url   query: null,
+155 verbose parsed url   pathname: '~1.2.x',
+155 verbose parsed url   path: '~1.2.x',
+155 verbose parsed url   href: '~1.2.x' }
+156 verbose addNamed [ 'angular', '~1.2.x' ]
+157 verbose addNamed [ null, '>=1.2.0-0 <1.3.0-0' ]
+158 silly lockFile d0f30f9a-angular-1-2-x angular@~1.2.x
+159 verbose lock angular@~1.2.x /home/ABC-OBJECTIF/cyprien.diot/.npm/d0f30f9a-angular-1-2-x.lock
+160 verbose cache add name="angular-route" spec="~1.2.x" args=["angular-route","~1.2.x"]
+161 verbose parsed url { protocol: null,
+161 verbose parsed url   slashes: null,
+161 verbose parsed url   auth: null,
+161 verbose parsed url   host: null,
+161 verbose parsed url   port: null,
+161 verbose parsed url   hostname: null,
+161 verbose parsed url   hash: null,
+161 verbose parsed url   search: null,
+161 verbose parsed url   query: null,
+161 verbose parsed url   pathname: '~1.2.x',
+161 verbose parsed url   path: '~1.2.x',
+161 verbose parsed url   href: '~1.2.x' }
+162 verbose addNamed [ 'angular-route', '~1.2.x' ]
+163 verbose addNamed [ null, '>=1.2.0-0 <1.3.0-0' ]
+164 silly lockFile 95b7e4b6-angular-route-1-2-x angular-route@~1.2.x
+165 verbose lock angular-route@~1.2.x /home/ABC-OBJECTIF/cyprien.diot/.npm/95b7e4b6-angular-route-1-2-x.lock
+166 verbose request where is /angular-resource
+167 verbose request registry https://registry.npmjs.org/
+168 verbose request id 2ae04a8c35fd2b60
+169 verbose url raw /angular-resource
+170 verbose url resolving [ 'https://registry.npmjs.org/', './angular-resource' ]
+171 verbose url resolved https://registry.npmjs.org/angular-resource
+172 verbose request where is https://registry.npmjs.org/angular-resource
+173 info trying registry request attempt 1 at 12:34:43
+174 verbose etag "9VUTNRXPI4KNK7FI55YLT12UJ"
+175 http GET https://registry.npmjs.org/angular-resource
+176 verbose request where is /angular-translate
+177 verbose request registry https://registry.npmjs.org/
+178 verbose url raw /angular-translate
+179 verbose url resolving [ 'https://registry.npmjs.org/', './angular-translate' ]
+180 verbose url resolved https://registry.npmjs.org/angular-translate
+181 verbose request where is https://registry.npmjs.org/angular-translate
+182 info trying registry request attempt 1 at 12:34:43
+183 verbose etag "3EWQ399I2FIJIDC9PO4KIBQQL"
+184 http GET https://registry.npmjs.org/angular-translate
+185 verbose request where is /components-font-awesome
+186 verbose request registry https://registry.npmjs.org/
+187 verbose url raw /components-font-awesome
+188 verbose url resolving [ 'https://registry.npmjs.org/', './components-font-awesome' ]
+189 verbose url resolved https://registry.npmjs.org/components-font-awesome
+190 verbose request where is https://registry.npmjs.org/components-font-awesome
+191 info trying registry request attempt 1 at 12:34:43
+192 http GET https://registry.npmjs.org/components-font-awesome
+193 silly addNameRange { name: 'gulp', range: '>=3.9.0-0 <4.0.0-0', hasData: false }
+194 silly addNameRange { name: 'gulp-concat',
+194 silly addNameRange   range: '>=2.5.2-0 <3.0.0-0',
+194 silly addNameRange   hasData: false }
+195 silly addNameRange { name: 'gulp-jshint',
+195 silly addNameRange   range: '>=1.9.4-0 <2.0.0-0',
+195 silly addNameRange   hasData: false }
+196 silly addNameRange { name: 'gulp-util',
+196 silly addNameRange   range: '>=3.0.4-0 <4.0.0-0',
+196 silly addNameRange   hasData: false }
+197 silly addNameRange { name: 'jshint-stylish',
+197 silly addNameRange   range: '>=1.0.1-0 <2.0.0-0',
+197 silly addNameRange   hasData: false }
+198 silly addNameRange { name: 'angular', range: '>=1.2.0-0 <1.3.0-0', hasData: false }
+199 verbose request where is /angular-slider
+200 verbose request registry https://registry.npmjs.org/
+201 verbose url raw /angular-slider
+202 verbose url resolving [ 'https://registry.npmjs.org/', './angular-slider' ]
+203 verbose url resolved https://registry.npmjs.org/angular-slider
+204 verbose request where is https://registry.npmjs.org/angular-slider
+205 info trying registry request attempt 1 at 12:34:43
+206 verbose etag "AE633VWX3WCR88GF1WRJJ1AJB"
+207 http GET https://registry.npmjs.org/angular-slider
+208 silly addNameRange { name: 'angular-route',
+208 silly addNameRange   range: '>=1.2.0-0 <1.3.0-0',
+208 silly addNameRange   hasData: false }
+209 verbose request where is /angular-cookies
+210 verbose request registry https://registry.npmjs.org/
+211 verbose url raw /angular-cookies
+212 verbose url resolving [ 'https://registry.npmjs.org/', './angular-cookies' ]
+213 verbose url resolved https://registry.npmjs.org/angular-cookies
+214 verbose request where is https://registry.npmjs.org/angular-cookies
+215 info trying registry request attempt 1 at 12:34:43
+216 verbose etag "CTTMNW4DJ9QKX8859B96H5F2P"
+217 http GET https://registry.npmjs.org/angular-cookies
+218 verbose request where is /bootstrap
+219 verbose request registry https://registry.npmjs.org/
+220 verbose url raw /bootstrap
+221 verbose url resolving [ 'https://registry.npmjs.org/', './bootstrap' ]
+222 verbose url resolved https://registry.npmjs.org/bootstrap
+223 verbose request where is https://registry.npmjs.org/bootstrap
+224 info trying registry request attempt 1 at 12:34:43
+225 verbose etag "5XKT1915E0EFX0JUPJ9TS82XV"
+226 http GET https://registry.npmjs.org/bootstrap
+227 verbose request where is /jquery
+228 verbose request registry https://registry.npmjs.org/
+229 verbose url raw /jquery
+230 verbose url resolving [ 'https://registry.npmjs.org/', './jquery' ]
+231 verbose url resolved https://registry.npmjs.org/jquery
+232 verbose request where is https://registry.npmjs.org/jquery
+233 info trying registry request attempt 1 at 12:34:43
+234 verbose etag "ABB0WSKF9J51J98VQ9GM642WQ"
+235 http GET https://registry.npmjs.org/jquery
+236 verbose request where is /favico.js
+237 verbose request registry https://registry.npmjs.org/
+238 verbose url raw /favico.js
+239 verbose url resolving [ 'https://registry.npmjs.org/', './favico.js' ]
+240 verbose url resolved https://registry.npmjs.org/favico.js
+241 verbose request where is https://registry.npmjs.org/favico.js
+242 info trying registry request attempt 1 at 12:34:43
+243 verbose etag "4GV1LB9WCG0RMPI4X95AJRYNO"
+244 http GET https://registry.npmjs.org/favico.js
+245 verbose request where is /ng-table
+246 verbose request registry https://registry.npmjs.org/
+247 verbose url raw /ng-table
+248 verbose url resolving [ 'https://registry.npmjs.org/', './ng-table' ]
+249 verbose url resolved https://registry.npmjs.org/ng-table
+250 verbose request where is https://registry.npmjs.org/ng-table
+251 info trying registry request attempt 1 at 12:34:43
+252 verbose etag "29PGF1INRBGXBB4XTD1MP4NRV"
+253 http GET https://registry.npmjs.org/ng-table
+254 verbose request where is /angular-xeditable
+255 verbose request registry https://registry.npmjs.org/
+256 verbose url raw /angular-xeditable
+257 verbose url resolving [ 'https://registry.npmjs.org/', './angular-xeditable' ]
+258 verbose url resolved https://registry.npmjs.org/angular-xeditable
+259 verbose request where is https://registry.npmjs.org/angular-xeditable
+260 info trying registry request attempt 1 at 12:34:43
+261 verbose etag "5GXRQCODDDEMMT77WOCFS088C"
+262 http GET https://registry.npmjs.org/angular-xeditable
+263 verbose request where is /gulp
+264 verbose request registry https://registry.npmjs.org/
+265 verbose url raw /gulp
+266 verbose url resolving [ 'https://registry.npmjs.org/', './gulp' ]
+267 verbose url resolved https://registry.npmjs.org/gulp
+268 verbose request where is https://registry.npmjs.org/gulp
+269 info trying registry request attempt 1 at 12:34:43
+270 verbose etag "8PJ8TH8QVM19GQS5PQ33G7Y6W"
+271 http GET https://registry.npmjs.org/gulp
+272 verbose request where is /gulp-concat
+273 verbose request registry https://registry.npmjs.org/
+274 verbose url raw /gulp-concat
+275 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-concat' ]
+276 verbose url resolved https://registry.npmjs.org/gulp-concat
+277 verbose request where is https://registry.npmjs.org/gulp-concat
+278 info trying registry request attempt 1 at 12:34:43
+279 verbose etag "DH7UNJXL2X14LAAX75109HS1V"
+280 http GET https://registry.npmjs.org/gulp-concat
+281 verbose request where is /gulp-util
+282 verbose request registry https://registry.npmjs.org/
+283 verbose url raw /gulp-util
+284 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-util' ]
+285 verbose url resolved https://registry.npmjs.org/gulp-util
+286 verbose request where is https://registry.npmjs.org/gulp-util
+287 info trying registry request attempt 1 at 12:34:43
+288 verbose etag "C5ESNQQFXB8GX4S39L929R0UU"
+289 http GET https://registry.npmjs.org/gulp-util
+290 verbose request where is /jshint-stylish
+291 verbose request registry https://registry.npmjs.org/
+292 verbose url raw /jshint-stylish
+293 verbose url resolving [ 'https://registry.npmjs.org/', './jshint-stylish' ]
+294 verbose url resolved https://registry.npmjs.org/jshint-stylish
+295 verbose request where is https://registry.npmjs.org/jshint-stylish
+296 info trying registry request attempt 1 at 12:34:43
+297 verbose etag "3C5PMU0K7TLLBMAXP3XPVNH6Y"
+298 http GET https://registry.npmjs.org/jshint-stylish
+299 verbose request where is /gulp-jshint
+300 verbose request registry https://registry.npmjs.org/
+301 verbose url raw /gulp-jshint
+302 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-jshint' ]
+303 verbose url resolved https://registry.npmjs.org/gulp-jshint
+304 verbose request where is https://registry.npmjs.org/gulp-jshint
+305 info trying registry request attempt 1 at 12:34:43
+306 verbose etag "4SCHQUYLRJJBHEV4RYXT5CF73"
+307 http GET https://registry.npmjs.org/gulp-jshint
+308 verbose request where is /angular
+309 verbose request registry https://registry.npmjs.org/
+310 verbose url raw /angular
+311 verbose url resolving [ 'https://registry.npmjs.org/', './angular' ]
+312 verbose url resolved https://registry.npmjs.org/angular
+313 verbose request where is https://registry.npmjs.org/angular
+314 info trying registry request attempt 1 at 12:34:43
+315 verbose etag "5QPTQGI9DEGXRIDB396I4N0XD"
+316 http GET https://registry.npmjs.org/angular
+317 verbose request where is /angular-route
+318 verbose request registry https://registry.npmjs.org/
+319 verbose url raw /angular-route
+320 verbose url resolving [ 'https://registry.npmjs.org/', './angular-route' ]
+321 verbose url resolved https://registry.npmjs.org/angular-route
+322 verbose request where is https://registry.npmjs.org/angular-route
+323 info trying registry request attempt 1 at 12:34:43
+324 verbose etag "25PCYQEFCCOJ2UJFHM0I4MTBH"
+325 http GET https://registry.npmjs.org/angular-route
+326 http 304 https://registry.npmjs.org/angular-translate
+327 silly registry.get cb [ 304,
+327 silly registry.get   { date: 'Tue, 11 Aug 2015 10:35:15 GMT',
+327 silly registry.get     via: '1.1 varnish',
+327 silly registry.get     'cache-control': 'max-age=60',
+327 silly registry.get     etag: '"3EWQ399I2FIJIDC9PO4KIBQQL"',
+327 silly registry.get     age: '0',
+327 silly registry.get     connection: 'keep-alive',
+327 silly registry.get     'x-served-by': 'cache-ams4141-AMS',
+327 silly registry.get     'x-cache': 'HIT',
+327 silly registry.get     'x-cache-hits': '1',
+327 silly registry.get     'x-timer': 'S1439289315.463448,VS0,VE157',
+327 silly registry.get     vary: 'Accept' } ]
+328 verbose etag https://registry.npmjs.org/angular-translate from cache
+329 silly addNameRange number 2 { name: 'angular-translate',
+329 silly addNameRange   range: '>=2.4.0-0 <2.5.0-0',
+329 silly addNameRange   hasData: true }
+330 silly addNameRange versions [ 'angular-translate',
+330 silly addNameRange   [ '2.2.1',
+330 silly addNameRange     '2.4.0',
+330 silly addNameRange     '2.4.1',
+330 silly addNameRange     '2.4.2',
+330 silly addNameRange     '2.5.0',
+330 silly addNameRange     '2.5.1',
+330 silly addNameRange     '2.5.2',
+330 silly addNameRange     '2.6.0',
+330 silly addNameRange     '2.6.1',
+330 silly addNameRange     '2.7.0',
+330 silly addNameRange     '2.7.1',
+330 silly addNameRange     '2.7.2' ] ]
+331 verbose addNamed [ 'angular-translate', '2.4.2' ]
+332 verbose addNamed [ '2.4.2', '2.4.2' ]
+333 silly lockFile d0c63b6e-angular-translate-2-4-2 angular-translate@2.4.2
+334 verbose lock angular-translate@2.4.2 /home/ABC-OBJECTIF/cyprien.diot/.npm/d0c63b6e-angular-translate-2-4-2.lock
+335 silly lockFile d0c63b6e-angular-translate-2-4-2 angular-translate@2.4.2
+336 silly lockFile d0c63b6e-angular-translate-2-4-2 angular-translate@2.4.2
+337 http 304 https://registry.npmjs.org/angular-resource
+338 silly registry.get cb [ 304,
+338 silly registry.get   { date: 'Tue, 11 Aug 2015 10:35:15 GMT',
+338 silly registry.get     via: '1.1 varnish',
+338 silly registry.get     'cache-control': 'max-age=60',
+338 silly registry.get     etag: '"9VUTNRXPI4KNK7FI55YLT12UJ"',
+338 silly registry.get     age: '0',
+338 silly registry.get     connection: 'keep-alive',
+338 silly registry.get     'x-served-by': 'cache-ams4150-AMS',
+338 silly registry.get     'x-cache': 'HIT',
+338 silly registry.get     'x-cache-hits': '1',
+338 silly registry.get     'x-timer': 'S1439289315.467673,VS0,VE165',
+338 silly registry.get     vary: 'Accept' } ]
+339 verbose etag https://registry.npmjs.org/angular-resource from cache
+340 silly lockFile b41fc687-angular-translate-2-4-x angular-translate@~2.4.x
+341 silly lockFile b41fc687-angular-translate-2-4-x angular-translate@~2.4.x
+342 silly addNameRange number 2 { name: 'angular-resource',
+342 silly addNameRange   range: '>=1.2.0-0 <1.3.0-0',
+342 silly addNameRange   hasData: true }
+343 silly addNameRange versions [ 'angular-resource',
+343 silly addNameRange   [ '0.0.1',
+343 silly addNameRange     '0.0.2',
+343 silly addNameRange     '0.1.0',
+343 silly addNameRange     '0.1.1',
+343 silly addNameRange     '1.3.0-rc.5',
+343 silly addNameRange     '1.3.0',
+343 silly addNameRange     '1.3.1',
+343 silly addNameRange     '1.3.2',
+343 silly addNameRange     '1.3.3',
+343 silly addNameRange     '1.3.4-build.3587',
+343 silly addNameRange     '1.2.27',
+343 silly addNameRange     '1.3.4',
+343 silly addNameRange     '1.3.5',
+343 silly addNameRange     '1.3.6',
+343 silly addNameRange     '1.3.7',
+343 silly addNameRange     '1.2.28',
+343 silly addNameRange     '1.3.8',
+343 silly addNameRange     '1.4.0-beta.0',
+343 silly addNameRange     '1.3.9',
+343 silly addNameRange     '1.3.10',
+343 silly addNameRange     '1.4.0-beta.1',
+343 silly addNameRange     '1.4.0-beta.2',
+343 silly addNameRange     '1.3.11',
+343 silly addNameRange     '1.4.0-beta.3',
+343 silly addNameRange     '1.3.12',
+343 silly addNameRange     '1.3.13',
+343 silly addNameRange     '1.4.0-beta.4',
+343 silly addNameRange     '1.3.14',
+343 silly addNameRange     '1.4.0-beta.5',
+343 silly addNameRange     '1.4.0-beta.6',
+343 silly addNameRange     '1.3.15',
+343 silly addNameRange     '1.4.0-rc.0',
+343 silly addNameRange     '1.4.0-rc.1',
+343 silly addNameRange     '1.4.0-rc.2',
+343 silly addNameRange     '1.4.0',
+343 silly addNameRange     '1.3.16',
+343 silly addNameRange     '1.4.1',
+343 silly addNameRange     '1.4.2',
+343 silly addNameRange     '1.3.17',
+343 silly addNameRange     '1.4.3' ] ]
+344 verbose addNamed [ 'angular-resource', '1.2.28' ]
+345 verbose addNamed [ '1.2.28', '1.2.28' ]
+346 silly lockFile efa14d94-angular-resource-1-2-28 angular-resource@1.2.28
+347 verbose lock angular-resource@1.2.28 /home/ABC-OBJECTIF/cyprien.diot/.npm/efa14d94-angular-resource-1-2-28.lock
+348 silly lockFile efa14d94-angular-resource-1-2-28 angular-resource@1.2.28
+349 silly lockFile efa14d94-angular-resource-1-2-28 angular-resource@1.2.28
+350 silly lockFile 77c931e9-angular-resource-1-2-x angular-resource@~1.2.x
+351 silly lockFile 77c931e9-angular-resource-1-2-x angular-resource@~1.2.x
+352 http 304 https://registry.npmjs.org/jquery
+353 silly registry.get cb [ 304,
+353 silly registry.get   { date: 'Tue, 11 Aug 2015 10:35:15 GMT',
+353 silly registry.get     via: '1.1 varnish',
+353 silly registry.get     'cache-control': 'max-age=60',
+353 silly registry.get     etag: '"ABB0WSKF9J51J98VQ9GM642WQ"',
+353 silly registry.get     age: '28',
+353 silly registry.get     connection: 'keep-alive',
+353 silly registry.get     'x-served-by': 'cache-ams4150-AMS',
+353 silly registry.get     'x-cache': 'HIT',
+353 silly registry.get     'x-cache-hits': '1',
+353 silly registry.get     'x-timer': 'S1439289315.662148,VS0,VE0',
+353 silly registry.get     vary: 'Accept' } ]
+354 verbose etag https://registry.npmjs.org/jquery from cache
+355 silly lockFile c0b66f62-jquery-2-1-0 jquery@2.1.0
+356 silly lockFile c0b66f62-jquery-2-1-0 jquery@2.1.0
+357 http 304 https://registry.npmjs.org/favico.js
+358 silly registry.get cb [ 304,
+358 silly registry.get   { date: 'Tue, 11 Aug 2015 10:35:15 GMT',
+358 silly registry.get     via: '1.1 varnish',
+358 silly registry.get     'cache-control': 'max-age=60',
+358 silly registry.get     etag: '"4GV1LB9WCG0RMPI4X95AJRYNO"',
+358 silly registry.get     age: '0',
+358 silly registry.get     connection: 'keep-alive',
+358 silly registry.get     'x-served-by': 'cache-ams4150-AMS',
+358 silly registry.get     'x-cache': 'MISS',
+358 silly registry.get     'x-cache-hits': '0',
+358 silly registry.get     'x-timer': 'S1439289315.688154,VS0,VE97',
+358 silly registry.get     vary: 'Accept' } ]
+359 verbose etag https://registry.npmjs.org/favico.js from cache
+360 silly lockFile d1aa2619-favico-js-0-3-9 favico.js@0.3.9
+361 silly lockFile d1aa2619-favico-js-0-3-9 favico.js@0.3.9
+362 http 304 https://registry.npmjs.org/angular-slider
+363 silly registry.get cb [ 304,
+363 silly registry.get   { date: 'Tue, 11 Aug 2015 10:35:15 GMT',
+363 silly registry.get     via: '1.1 varnish',
+363 silly registry.get     'cache-control': 'max-age=60',
+363 silly registry.get     etag: '"AE633VWX3WCR88GF1WRJJ1AJB"',
+363 silly registry.get     age: '0',
+363 silly registry.get     connection: 'keep-alive',
+363 silly registry.get     'x-served-by': 'cache-ams4139-AMS',
+363 silly registry.get     'x-cache': 'MISS',
+363 silly registry.get     'x-cache-hits': '0',
+363 silly registry.get     'x-timer': 'S1439289315.471075,VS0,VE386',
+363 silly registry.get     vary: 'Accept' } ]
+364 verbose etag https://registry.npmjs.org/angular-slider from cache
+365 http 304 https://registry.npmjs.org/angular-cookies
+366 silly registry.get cb [ 304,
+366 silly registry.get   { date: 'Tue, 11 Aug 2015 10:35:15 GMT',
+366 silly registry.get     via: '1.1 varnish',
+366 silly registry.get     'cache-control': 'max-age=60',
+366 silly registry.get     etag: '"CTTMNW4DJ9QKX8859B96H5F2P"',
+366 silly registry.get     age: '0',
+366 silly registry.get     connection: 'keep-alive',
+366 silly registry.get     'x-served-by': 'cache-ams4132-AMS',
+366 silly registry.get     'x-cache': 'HIT',
+366 silly registry.get     'x-cache-hits': '1',
+366 silly registry.get     'x-timer': 'S1439289315.477603,VS0,VE383',
+366 silly registry.get     vary: 'Accept' } ]
+367 verbose etag https://registry.npmjs.org/angular-cookies from cache
+368 silly addNameRange number 2 { name: 'angular-cookies',
+368 silly addNameRange   range: '>=1.2.0-0 <1.3.0-0',
+368 silly addNameRange   hasData: true }
+369 silly addNameRange versions [ 'angular-cookies',
+369 silly addNameRange   [ '1.2.20',
+369 silly addNameRange     '1.2.0',
+369 silly addNameRange     '1.2.1',
+369 silly addNameRange     '1.2.2',
+369 silly addNameRange     '1.2.3',
+369 silly addNameRange     '1.2.4',
+369 silly addNameRange     '1.2.5',
+369 silly addNameRange     '1.2.6',
+369 silly addNameRange     '1.2.7',
+369 silly addNameRange     '1.2.8',
+369 silly addNameRange     '1.2.9',
+369 silly addNameRange     '1.2.10',
+369 silly addNameRange     '1.2.11',
+369 silly addNameRange     '1.2.12',
+369 silly addNameRange     '1.2.13',
+369 silly addNameRange     '1.2.14',
+369 silly addNameRange     '1.2.15',
+369 silly addNameRange     '1.2.16',
+369 silly addNameRange     '1.2.17',
+369 silly addNameRange     '1.2.18',
+369 silly addNameRange     '1.2.19',
+369 silly addNameRange     '1.3.0-rc.5',
+369 silly addNameRange     '1.3.0',
+369 silly addNameRange     '1.3.1',
+369 silly addNameRange     '1.3.2',
+369 silly addNameRange     '1.3.3',
+369 silly addNameRange     '1.3.4-build.3588',
+369 silly addNameRange     '1.2.27',
+369 silly addNameRange     '1.3.4',
+369 silly addNameRange     '1.3.5',
+369 silly addNameRange     '1.3.6',
+369 silly addNameRange     '1.3.7',
+369 silly addNameRange     '1.2.28',
+369 silly addNameRange     '1.3.8',
+369 silly addNameRange     '1.4.0-beta.0',
+369 silly addNameRange     '1.3.9',
+369 silly addNameRange     '1.3.10',
+369 silly addNameRange     '1.4.0-beta.1',
+369 silly addNameRange     '1.4.0-beta.2',
+369 silly addNameRange     '1.3.11',
+369 silly addNameRange     '1.4.0-beta.3',
+369 silly addNameRange     '1.3.12',
+369 silly addNameRange     '1.3.13',
+369 silly addNameRange     '1.4.0-beta.4',
+369 silly addNameRange     '1.3.14',
+369 silly addNameRange     '1.4.0-beta.5',
+369 silly addNameRange     '1.4.0-beta.6',
+369 silly addNameRange     '1.3.15',
+369 silly addNameRange     '1.4.0-rc.0',
+369 silly addNameRange     '1.4.0-rc.1',
+369 silly addNameRange     '1.4.0-rc.2',
+369 silly addNameRange     '1.4.0',
+369 silly addNameRange     '1.3.16',
+369 silly addNameRange     '1.4.1',
+369 silly addNameRange     '1.4.2',
+369 silly addNameRange     '1.3.17',
+369 silly addNameRange     '1.4.3' ] ]
+370 verbose addNamed [ 'angular-cookies', '1.2.28' ]
+371 verbose addNamed [ '1.2.28', '1.2.28' ]
+372 silly lockFile 35afa829-angular-cookies-1-2-28 angular-cookies@1.2.28
+373 verbose lock angular-cookies@1.2.28 /home/ABC-OBJECTIF/cyprien.diot/.npm/35afa829-angular-cookies-1-2-28.lock
+374 silly lockFile 102def9b-angular-slider-v0-2-3 angular-slider@v0.2.3
+375 silly lockFile 102def9b-angular-slider-v0-2-3 angular-slider@v0.2.3
+376 http 304 https://registry.npmjs.org/gulp
+377 silly registry.get cb [ 304,
+377 silly registry.get   { date: 'Tue, 11 Aug 2015 10:35:15 GMT',
+377 silly registry.get     via: '1.1 varnish',
+377 silly registry.get     'cache-control': 'max-age=60',
+377 silly registry.get     etag: '"8PJ8TH8QVM19GQS5PQ33G7Y6W"',
+377 silly registry.get     age: '55',
+377 silly registry.get     connection: 'keep-alive',
+377 silly registry.get     'x-served-by': 'cache-ams4132-AMS',
+377 silly registry.get     'x-cache': 'HIT',
+377 silly registry.get     'x-cache-hits': '1',
+377 silly registry.get     'x-timer': 'S1439289315.887462,VS0,VE0',
+377 silly registry.get     vary: 'Accept' } ]
+378 verbose etag https://registry.npmjs.org/gulp from cache
+379 silly lockFile 35afa829-angular-cookies-1-2-28 angular-cookies@1.2.28
+380 silly lockFile 35afa829-angular-cookies-1-2-28 angular-cookies@1.2.28
+381 silly lockFile 87daa9c9-angular-cookies-1-2-x angular-cookies@~1.2.x
+382 silly lockFile 87daa9c9-angular-cookies-1-2-x angular-cookies@~1.2.x
+383 silly addNameRange number 2 { name: 'gulp', range: '>=3.9.0-0 <4.0.0-0', hasData: true }
+384 silly addNameRange versions [ 'gulp',
+384 silly addNameRange   [ '0.0.1',
+384 silly addNameRange     '0.0.2',
+384 silly addNameRange     '0.0.3',
+384 silly addNameRange     '0.0.4',
+384 silly addNameRange     '0.0.5',
+384 silly addNameRange     '0.0.7',
+384 silly addNameRange     '0.0.8',
+384 silly addNameRange     '0.0.9',
+384 silly addNameRange     '0.1.0',
+384 silly addNameRange     '0.2.0',
+384 silly addNameRange     '1.0.0',
+384 silly addNameRange     '1.1.0',
+384 silly addNameRange     '1.2.0',
+384 silly addNameRange     '1.2.1',
+384 silly addNameRange     '2.0.0',
+384 silly addNameRange     '2.0.1',
+384 silly addNameRange     '2.1.0',
+384 silly addNameRange     '2.2.0',
+384 silly addNameRange     '2.3.0',
+384 silly addNameRange     '2.4.0',
+384 silly addNameRange     '2.4.1',
+384 silly addNameRange     '2.6.0',
+384 silly addNameRange     '2.6.1',
+384 silly addNameRange     '2.7.0',
+384 silly addNameRange     '3.0.0',
+384 silly addNameRange     '3.1.1',
+384 silly addNameRange     '3.1.2',
+384 silly addNameRange     '3.1.3',
+384 silly addNameRange     '3.1.4',
+384 silly addNameRange     '3.2.0',
+384 silly addNameRange     '3.2.1',
+384 silly addNameRange     '3.2.2',
+384 silly addNameRange     '3.2.3',
+384 silly addNameRange     '3.2.4',
+384 silly addNameRange     '3.2.5',
+384 silly addNameRange     '3.3.0',
+384 silly addNameRange     '3.3.1',
+384 silly addNameRange     '3.3.2',
+384 silly addNameRange     '3.3.4',
+384 silly addNameRange     '3.4.0',
+384 silly addNameRange     '3.5.0',
+384 silly addNameRange     '3.5.1',
+384 silly addNameRange     '3.5.2',
+384 silly addNameRange     '3.5.5',
+384 silly addNameRange     '3.5.6',
+384 silly addNameRange     '3.6.0',
+384 silly addNameRange     '3.6.1',
+384 silly addNameRange     '3.6.2',
+384 silly addNameRange     '3.7.0',
+384 silly addNameRange     '3.8.0',
+384 silly addNameRange     '3.8.1',
+384 silly addNameRange     '3.8.2',
+384 silly addNameRange     '3.8.3',
+384 silly addNameRange     '3.8.4',
+384 silly addNameRange     '3.8.5',
+384 silly addNameRange     '3.8.6',
+384 silly addNameRange     '3.8.7',
+384 silly addNameRange     '3.8.8',
+384 silly addNameRange     '3.8.9',
+384 silly addNameRange     '3.8.10',
+384 silly addNameRange     '3.8.11',
+384 silly addNameRange     '3.9.0' ] ]
+385 verbose addNamed [ 'gulp', '3.9.0' ]
+386 verbose addNamed [ '3.9.0', '3.9.0' ]
+387 silly lockFile c2697a61-gulp-3-9-0 gulp@3.9.0
+388 verbose lock gulp@3.9.0 /home/ABC-OBJECTIF/cyprien.diot/.npm/c2697a61-gulp-3-9-0.lock
+389 silly lockFile c2697a61-gulp-3-9-0 gulp@3.9.0
+390 silly lockFile c2697a61-gulp-3-9-0 gulp@3.9.0
+391 silly lockFile a7ccee77-gulp-3-9-0 gulp@^3.9.0
+392 silly lockFile a7ccee77-gulp-3-9-0 gulp@^3.9.0
+393 http 304 https://registry.npmjs.org/gulp-concat
+394 silly registry.get cb [ 304,
+394 silly registry.get   { date: 'Tue, 11 Aug 2015 10:35:15 GMT',
+394 silly registry.get     via: '1.1 varnish',
+394 silly registry.get     'cache-control': 'max-age=60',
+394 silly registry.get     etag: '"DH7UNJXL2X14LAAX75109HS1V"',
+394 silly registry.get     age: '10',
+394 silly registry.get     connection: 'keep-alive',
+394 silly registry.get     'x-served-by': 'cache-ams4132-AMS',
+394 silly registry.get     'x-cache': 'HIT',
+394 silly registry.get     'x-cache-hits': '1',
+394 silly registry.get     'x-timer': 'S1439289315.911480,VS0,VE0',
+394 silly registry.get     vary: 'Accept' } ]
+395 verbose etag https://registry.npmjs.org/gulp-concat from cache
+396 silly addNameRange number 2 { name: 'gulp-concat',
+396 silly addNameRange   range: '>=2.5.2-0 <3.0.0-0',
+396 silly addNameRange   hasData: true }
+397 silly addNameRange versions [ 'gulp-concat',
+397 silly addNameRange   [ '0.0.1',
+397 silly addNameRange     '1.0.0',
+397 silly addNameRange     '1.1.0',
+397 silly addNameRange     '2.0.0',
+397 silly addNameRange     '2.1.0',
+397 silly addNameRange     '2.1.1',
+397 silly addNameRange     '2.1.2',
+397 silly addNameRange     '2.1.3',
+397 silly addNameRange     '2.1.4',
+397 silly addNameRange     '2.1.5',
+397 silly addNameRange     '2.1.6',
+397 silly addNameRange     '2.1.7',
+397 silly addNameRange     '2.2.0',
+397 silly addNameRange     '2.3.0',
+397 silly addNameRange     '2.3.3',
+397 silly addNameRange     '2.3.4',
+397 silly addNameRange     '2.3.5',
+397 silly addNameRange     '2.4.0',
+397 silly addNameRange     '2.4.1',
+397 silly addNameRange     '2.4.2',
+397 silly addNameRange     '2.4.3',
+397 silly addNameRange     '2.5.0',
+397 silly addNameRange     '2.5.1',
+397 silly addNameRange     '2.5.2',
+397 silly addNameRange     '2.6.0' ] ]
+398 verbose addNamed [ 'gulp-concat', '2.6.0' ]
+399 verbose addNamed [ '2.6.0', '2.6.0' ]
+400 silly lockFile 03b8a742-gulp-concat-2-6-0 gulp-concat@2.6.0
+401 verbose lock gulp-concat@2.6.0 /home/ABC-OBJECTIF/cyprien.diot/.npm/03b8a742-gulp-concat-2-6-0.lock
+402 silly lockFile 03b8a742-gulp-concat-2-6-0 gulp-concat@2.6.0
+403 silly lockFile 03b8a742-gulp-concat-2-6-0 gulp-concat@2.6.0
+404 silly lockFile 60a235d6-gulp-concat-2-5-2 gulp-concat@^2.5.2
+405 silly lockFile 60a235d6-gulp-concat-2-5-2 gulp-concat@^2.5.2
+406 http 304 https://registry.npmjs.org/gulp-util
+407 silly registry.get cb [ 304,
+407 silly registry.get   { date: 'Tue, 11 Aug 2015 10:35:15 GMT',
+407 silly registry.get     via: '1.1 varnish',
+407 silly registry.get     'cache-control': 'max-age=60',
+407 silly registry.get     etag: '"C5ESNQQFXB8GX4S39L929R0UU"',
+407 silly registry.get     age: '51',
+407 silly registry.get     connection: 'keep-alive',
+407 silly registry.get     'x-served-by': 'cache-ams4132-AMS',
+407 silly registry.get     'x-cache': 'HIT',
+407 silly registry.get     'x-cache-hits': '1',
+407 silly registry.get     'x-timer': 'S1439289315.935464,VS0,VE0',
+407 silly registry.get     vary: 'Accept' } ]
+408 verbose etag https://registry.npmjs.org/gulp-util from cache
+409 silly addNameRange number 2 { name: 'gulp-util', range: '>=3.0.4-0 <4.0.0-0', hasData: true }
+410 silly addNameRange versions [ 'gulp-util',
+410 silly addNameRange   [ '0.0.1',
+410 silly addNameRange     '1.0.0',
+410 silly addNameRange     '1.1.0',
+410 silly addNameRange     '1.1.1',
+410 silly addNameRange     '1.2.0',
+410 silly addNameRange     '1.3.0',
+410 silly addNameRange     '2.0.0',
+410 silly addNameRange     '2.1.1',
+410 silly addNameRange     '2.1.2',
+410 silly addNameRange     '2.1.3',
+410 silly addNameRange     '2.1.4',
+410 silly addNameRange     '2.2.0',
+410 silly addNameRange     '2.2.1',
+410 silly addNameRange     '2.2.2',
+410 silly addNameRange     '2.2.3',
+410 silly addNameRange     '2.2.5',
+410 silly addNameRange     '2.2.6',
+410 silly addNameRange     '2.2.7',
+410 silly addNameRange     '2.2.8',
+410 silly addNameRange     '2.2.9',
+410 silly addNameRange     '2.2.10',
+410 silly addNameRange     '2.2.11',
+410 silly addNameRange     '2.2.12',
+410 silly addNameRange     '2.2.13',
+410 silly addNameRange     '2.2.14',
+410 silly addNameRange     '2.2.15',
+410 silly addNameRange     '2.2.16',
+410 silly addNameRange     '2.2.17',
+410 silly addNameRange     '2.2.18',
+410 silly addNameRange     '2.2.19',
+410 silly addNameRange     '2.2.20',
+410 silly addNameRange     '3.0.0',
+410 silly addNameRange     '3.0.1',
+410 silly addNameRange     '3.0.2',
+410 silly addNameRange     '3.0.3',
+410 silly addNameRange     '3.0.4',
+410 silly addNameRange     '3.0.5',
+410 silly addNameRange     '3.0.6' ] ]
+411 verbose addNamed [ 'gulp-util', '3.0.6' ]
+412 verbose addNamed [ '3.0.6', '3.0.6' ]
+413 silly lockFile d2dca944-gulp-util-3-0-6 gulp-util@3.0.6
+414 verbose lock gulp-util@3.0.6 /home/ABC-OBJECTIF/cyprien.diot/.npm/d2dca944-gulp-util-3-0-6.lock
+415 silly lockFile d2dca944-gulp-util-3-0-6 gulp-util@3.0.6
+416 silly lockFile d2dca944-gulp-util-3-0-6 gulp-util@3.0.6
+417 silly lockFile f8ceac1d-gulp-util-3-0-4 gulp-util@^3.0.4
+418 silly lockFile f8ceac1d-gulp-util-3-0-4 gulp-util@^3.0.4
+419 http 304 https://registry.npmjs.org/angular-xeditable
+420 silly registry.get cb [ 304,
+420 silly registry.get   { date: 'Tue, 11 Aug 2015 10:35:15 GMT',
+420 silly registry.get     via: '1.1 varnish',
+420 silly registry.get     'cache-control': 'max-age=60',
+420 silly registry.get     etag: '"5GXRQCODDDEMMT77WOCFS088C"',
+420 silly registry.get     age: '0',
+420 silly registry.get     connection: 'keep-alive',
+420 silly registry.get     'x-served-by': 'cache-ams4139-AMS',
+420 silly registry.get     'x-cache': 'MISS',
+420 silly registry.get     'x-cache-hits': '0',
+420 silly registry.get     'x-timer': 'S1439289315.886127,VS0,VE93',
+420 silly registry.get     vary: 'Accept' } ]
+421 verbose etag https://registry.npmjs.org/angular-xeditable from cache
+422 silly lockFile 1c6993b1-angular-xeditable-0-1-8 angular-xeditable@0.1.8
+423 silly lockFile 1c6993b1-angular-xeditable-0-1-8 angular-xeditable@0.1.8
+424 http 304 https://registry.npmjs.org/ng-table
+425 silly registry.get cb [ 304,
+425 silly registry.get   { date: 'Tue, 11 Aug 2015 10:35:15 GMT',
+425 silly registry.get     via: '1.1 varnish',
+425 silly registry.get     'cache-control': 'max-age=60',
+425 silly registry.get     etag: '"29PGF1INRBGXBB4XTD1MP4NRV"',
+425 silly registry.get     age: '0',
+425 silly registry.get     connection: 'keep-alive',
+425 silly registry.get     'x-served-by': 'cache-ams4150-AMS',
+425 silly registry.get     'x-cache': 'MISS',
+425 silly registry.get     'x-cache-hits': '0',
+425 silly registry.get     'x-timer': 'S1439289315.816654,VS0,VE169',
+425 silly registry.get     vary: 'Accept' } ]
+426 verbose etag https://registry.npmjs.org/ng-table from cache
+427 silly lockFile b4386444-ng-table-0-5-4 ng-table@0.5.4
+428 silly lockFile b4386444-ng-table-0-5-4 ng-table@0.5.4
+429 http 304 https://registry.npmjs.org/gulp-jshint
+430 silly registry.get cb [ 304,
+430 silly registry.get   { date: 'Tue, 11 Aug 2015 10:35:16 GMT',
+430 silly registry.get     via: '1.1 varnish',
+430 silly registry.get     'cache-control': 'max-age=60',
+430 silly registry.get     etag: '"4SCHQUYLRJJBHEV4RYXT5CF73"',
+430 silly registry.get     age: '16',
+430 silly registry.get     connection: 'keep-alive',
+430 silly registry.get     'x-served-by': 'cache-ams4139-AMS',
+430 silly registry.get     'x-cache': 'HIT',
+430 silly registry.get     'x-cache-hits': '1',
+430 silly registry.get     'x-timer': 'S1439289316.006603,VS0,VE0',
+430 silly registry.get     vary: 'Accept' } ]
+431 verbose etag https://registry.npmjs.org/gulp-jshint from cache
+432 silly addNameRange number 2 { name: 'gulp-jshint',
+432 silly addNameRange   range: '>=1.9.4-0 <2.0.0-0',
+432 silly addNameRange   hasData: true }
+433 silly addNameRange versions [ 'gulp-jshint',
+433 silly addNameRange   [ '0.0.1',
+433 silly addNameRange     '0.1.0',
+433 silly addNameRange     '1.0.0',
+433 silly addNameRange     '1.1.0',
+433 silly addNameRange     '1.2.0',
+433 silly addNameRange     '1.3.0',
+433 silly addNameRange     '1.3.1',
+433 silly addNameRange     '1.3.2',
+433 silly addNameRange     '1.3.3',
+433 silly addNameRange     '1.3.4',
+433 silly addNameRange     '1.4.0',
+433 silly addNameRange     '1.4.1',
+433 silly addNameRange     '1.4.2',
+433 silly addNameRange     '1.5.0',
+433 silly addNameRange     '1.5.1',
+433 silly addNameRange     '1.5.2',
+433 silly addNameRange     '1.5.3',
+433 silly addNameRange     '1.5.4',
+433 silly addNameRange     '1.5.5',
+433 silly addNameRange     '1.5.6',
+433 silly addNameRange     '1.6.0',
+433 silly addNameRange     '1.6.1',
+433 silly addNameRange     '1.6.2',
+433 silly addNameRange     '1.6.3',
+433 silly addNameRange     '1.6.4',
+433 silly addNameRange     '1.7.0',
+433 silly addNameRange     '1.7.1',
+433 silly addNameRange     '1.8.0',
+433 silly addNameRange     '1.8.1',
+433 silly addNameRange     '1.8.2',
+433 silly addNameRange     '1.8.3',
+433 silly addNameRange     '1.8.4',
+433 silly addNameRange     '1.8.5',
+433 silly addNameRange     '1.8.6',
+433 silly addNameRange     '1.9.0',
+433 silly addNameRange     '1.9.2',
+433 silly addNameRange     '1.9.3',
+433 silly addNameRange     '1.9.4',
+433 silly addNameRange     '1.10.0',
+433 silly addNameRange     '1.11.0',
+433 silly addNameRange     '1.11.1',
+433 silly addNameRange     '1.11.2' ] ]
+434 verbose addNamed [ 'gulp-jshint', '1.11.2' ]
+435 verbose addNamed [ '1.11.2', '1.11.2' ]
+436 silly lockFile c3710df5-gulp-jshint-1-11-2 gulp-jshint@1.11.2
+437 verbose lock gulp-jshint@1.11.2 /home/ABC-OBJECTIF/cyprien.diot/.npm/c3710df5-gulp-jshint-1-11-2.lock
+438 silly lockFile c3710df5-gulp-jshint-1-11-2 gulp-jshint@1.11.2
+439 silly lockFile c3710df5-gulp-jshint-1-11-2 gulp-jshint@1.11.2
+440 silly lockFile 355207cc-gulp-jshint-1-9-4 gulp-jshint@^1.9.4
+441 silly lockFile 355207cc-gulp-jshint-1-9-4 gulp-jshint@^1.9.4
+442 http 404 https://registry.npmjs.org/components-font-awesome
+443 verbose headers { 'cache-control': 'max-age=0',
+443 verbose headers   'transfer-encoding': 'chunked',
+443 verbose headers   'accept-ranges': 'bytes',
+443 verbose headers   date: 'Tue, 11 Aug 2015 10:35:16 GMT',
+443 verbose headers   via: '1.1 varnish',
+443 verbose headers   age: '0',
+443 verbose headers   connection: 'keep-alive',
+443 verbose headers   'x-served-by': 'cache-ams4120-AMS',
+443 verbose headers   'x-cache': 'MISS',
+443 verbose headers   'x-cache-hits': '0',
+443 verbose headers   'x-timer': 'S1439289315.467127,VS0,VE690' }
+444 silly registry.get cb [ 404,
+444 silly registry.get   { 'cache-control': 'max-age=0',
+444 silly registry.get     'transfer-encoding': 'chunked',
+444 silly registry.get     'accept-ranges': 'bytes',
+444 silly registry.get     date: 'Tue, 11 Aug 2015 10:35:16 GMT',
+444 silly registry.get     via: '1.1 varnish',
+444 silly registry.get     age: '0',
+444 silly registry.get     connection: 'keep-alive',
+444 silly registry.get     'x-served-by': 'cache-ams4120-AMS',
+444 silly registry.get     'x-cache': 'MISS',
+444 silly registry.get     'x-cache-hits': '0',
+444 silly registry.get     'x-timer': 'S1439289315.467127,VS0,VE690' } ]
+445 silly lockFile 5b7d9bce-components-font-awesome-4-2-0 components-font-awesome@4.2.0
+446 silly lockFile 5b7d9bce-components-font-awesome-4-2-0 components-font-awesome@4.2.0
+447 http 304 https://registry.npmjs.org/bootstrap
+448 silly registry.get cb [ 304,
+448 silly registry.get   { date: 'Tue, 11 Aug 2015 10:35:15 GMT',
+448 silly registry.get     via: '1.1 varnish',
+448 silly registry.get     'cache-control': 'max-age=60',
+448 silly registry.get     etag: '"5XKT1915E0EFX0JUPJ9TS82XV"',
+448 silly registry.get     age: '0',
+448 silly registry.get     connection: 'keep-alive',
+448 silly registry.get     'x-served-by': 'cache-ams4141-AMS',
+448 silly registry.get     'x-cache': 'HIT',
+448 silly registry.get     'x-cache-hits': '1',
+448 silly registry.get     'x-timer': 'S1439289315.647937,VS0,VE671',
+448 silly registry.get     vary: 'Accept' } ]
+449 verbose etag https://registry.npmjs.org/bootstrap from cache
+450 silly lockFile 59eb343d-bootstrap-3-1-1 bootstrap@3.1.1
+451 silly lockFile 59eb343d-bootstrap-3-1-1 bootstrap@3.1.1
+452 http 304 https://registry.npmjs.org/angular-route
+453 silly registry.get cb [ 304,
+453 silly registry.get   { date: 'Tue, 11 Aug 2015 10:35:16 GMT',
+453 silly registry.get     via: '1.1 varnish',
+453 silly registry.get     'cache-control': 'max-age=60',
+453 silly registry.get     etag: '"25PCYQEFCCOJ2UJFHM0I4MTBH"',
+453 silly registry.get     age: '0',
+453 silly registry.get     connection: 'keep-alive',
+453 silly registry.get     'x-served-by': 'cache-ams4139-AMS',
+453 silly registry.get     'x-cache': 'HIT',
+453 silly registry.get     'x-cache-hits': '1',
+453 silly registry.get     'x-timer': 'S1439289316.033089,VS0,VE390',
+453 silly registry.get     vary: 'Accept' } ]
+454 verbose etag https://registry.npmjs.org/angular-route from cache
+455 silly addNameRange number 2 { name: 'angular-route',
+455 silly addNameRange   range: '>=1.2.0-0 <1.3.0-0',
+455 silly addNameRange   hasData: true }
+456 silly addNameRange versions [ 'angular-route',
+456 silly addNameRange   [ '1.2.17-build.163.1',
+456 silly addNameRange     '1.3.0-rc.5',
+456 silly addNameRange     '1.3.0',
+456 silly addNameRange     '1.3.1',
+456 silly addNameRange     '1.3.2',
+456 silly addNameRange     '1.3.3',
+456 silly addNameRange     '1.3.4-build.3588',
+456 silly addNameRange     '1.2.27',
+456 silly addNameRange     '1.3.4',
+456 silly addNameRange     '1.3.5',
+456 silly addNameRange     '1.3.6',
+456 silly addNameRange     '1.3.7',
+456 silly addNameRange     '1.2.28',
+456 silly addNameRange     '1.3.8',
+456 silly addNameRange     '1.4.0-beta.0',
+456 silly addNameRange     '1.3.9',
+456 silly addNameRange     '1.3.10',
+456 silly addNameRange     '1.4.0-beta.1',
+456 silly addNameRange     '1.4.0-beta.2',
+456 silly addNameRange     '1.3.11',
+456 silly addNameRange     '1.4.0-beta.3',
+456 silly addNameRange     '1.3.12',
+456 silly addNameRange     '1.3.13',
+456 silly addNameRange     '1.4.0-beta.4',
+456 silly addNameRange     '1.3.14',
+456 silly addNameRange     '1.4.0-beta.5',
+456 silly addNameRange     '1.4.0-beta.6',
+456 silly addNameRange     '1.3.15',
+456 silly addNameRange     '1.4.0-rc.0',
+456 silly addNameRange     '1.4.0-rc.1',
+456 silly addNameRange     '1.4.0-rc.2',
+456 silly addNameRange     '1.4.0',
+456 silly addNameRange     '1.3.16',
+456 silly addNameRange     '1.4.1',
+456 silly addNameRange     '1.4.2',
+456 silly addNameRange     '1.3.17',
+456 silly addNameRange     '1.4.3' ] ]
+457 verbose addNamed [ 'angular-route', '1.2.28' ]
+458 verbose addNamed [ '1.2.28', '1.2.28' ]
+459 silly lockFile 71c0633a-angular-route-1-2-28 angular-route@1.2.28
+460 verbose lock angular-route@1.2.28 /home/ABC-OBJECTIF/cyprien.diot/.npm/71c0633a-angular-route-1-2-28.lock
+461 silly lockFile 71c0633a-angular-route-1-2-28 angular-route@1.2.28
+462 silly lockFile 71c0633a-angular-route-1-2-28 angular-route@1.2.28
+463 silly lockFile 95b7e4b6-angular-route-1-2-x angular-route@~1.2.x
+464 silly lockFile 95b7e4b6-angular-route-1-2-x angular-route@~1.2.x
+465 http 304 https://registry.npmjs.org/jshint-stylish
+466 silly registry.get cb [ 304,
+466 silly registry.get   { date: 'Tue, 11 Aug 2015 10:35:15 GMT',
+466 silly registry.get     via: '1.1 varnish',
+466 silly registry.get     'cache-control': 'max-age=60',
+466 silly registry.get     etag: '"3C5PMU0K7TLLBMAXP3XPVNH6Y"',
+466 silly registry.get     age: '0',
+466 silly registry.get     connection: 'keep-alive',
+466 silly registry.get     'x-served-by': 'cache-ams4132-AMS',
+466 silly registry.get     'x-cache': 'HIT',
+466 silly registry.get     'x-cache-hits': '1',
+466 silly registry.get     'x-timer': 'S1439289315.962457,VS0,VE690',
+466 silly registry.get     vary: 'Accept' } ]
+467 verbose etag https://registry.npmjs.org/jshint-stylish from cache
+468 silly addNameRange number 2 { name: 'jshint-stylish',
+468 silly addNameRange   range: '>=1.0.1-0 <2.0.0-0',
+468 silly addNameRange   hasData: true }
+469 silly addNameRange versions [ 'jshint-stylish',
+469 silly addNameRange   [ '0.1.0',
+469 silly addNameRange     '0.1.1',
+469 silly addNameRange     '0.1.2',
+469 silly addNameRange     '0.1.3',
+469 silly addNameRange     '0.1.4',
+469 silly addNameRange     '0.1.5',
+469 silly addNameRange     '0.2.0',
+469 silly addNameRange     '0.3.0',
+469 silly addNameRange     '0.4.0',
+469 silly addNameRange     '1.0.0',
+469 silly addNameRange     '1.0.1',
+469 silly addNameRange     '1.0.2',
+469 silly addNameRange     '2.0.0',
+469 silly addNameRange     '2.0.1' ] ]
+470 verbose addNamed [ 'jshint-stylish', '1.0.2' ]
+471 verbose addNamed [ '1.0.2', '1.0.2' ]
+472 silly lockFile 354bbbdb-jshint-stylish-1-0-2 jshint-stylish@1.0.2
+473 verbose lock jshint-stylish@1.0.2 /home/ABC-OBJECTIF/cyprien.diot/.npm/354bbbdb-jshint-stylish-1-0-2.lock
+474 http 304 https://registry.npmjs.org/angular
+475 silly registry.get cb [ 304,
+475 silly registry.get   { date: 'Tue, 11 Aug 2015 10:35:16 GMT',
+475 silly registry.get     via: '1.1 varnish',
+475 silly registry.get     'cache-control': 'max-age=60',
+475 silly registry.get     etag: '"5QPTQGI9DEGXRIDB396I4N0XD"',
+475 silly registry.get     age: '0',
+475 silly registry.get     connection: 'keep-alive',
+475 silly registry.get     'x-served-by': 'cache-ams4150-AMS',
+475 silly registry.get     'x-cache': 'HIT',
+475 silly registry.get     'x-cache-hits': '1',
+475 silly registry.get     'x-timer': 'S1439289316.012149,VS0,VE646',
+475 silly registry.get     vary: 'Accept' } ]
+476 verbose etag https://registry.npmjs.org/angular from cache
+477 silly lockFile 354bbbdb-jshint-stylish-1-0-2 jshint-stylish@1.0.2
+478 silly lockFile 354bbbdb-jshint-stylish-1-0-2 jshint-stylish@1.0.2
+479 silly addNameRange number 2 { name: 'angular', range: '>=1.2.0-0 <1.3.0-0', hasData: true }
+480 silly addNameRange versions [ 'angular',
+480 silly addNameRange   [ '0.0.1',
+480 silly addNameRange     '0.0.1-1',
+480 silly addNameRange     '0.0.1-2',
+480 silly addNameRange     '0.0.2',
+480 silly addNameRange     '0.0.3',
+480 silly addNameRange     '0.0.4',
+480 silly addNameRange     '1.0.0',
+480 silly addNameRange     '1.0.1',
+480 silly addNameRange     '1.0.2',
+480 silly addNameRange     '1.0.3',
+480 silly addNameRange     '1.0.4',
+480 silly addNameRange     '1.0.5',
+480 silly addNameRange     '1.0.6',
+480 silly addNameRange     '1.0.7',
+480 silly addNameRange     '1.0.8',
+480 silly addNameRange     '1.1.0',
+480 silly addNameRange     '1.1.1',
+480 silly addNameRange     '1.1.2',
+480 silly addNameRange     '1.1.3',
+480 silly addNameRange     '1.1.4',
+480 silly addNameRange     '1.1.5',
+480 silly addNameRange     '1.2.0',
+480 silly addNameRange     '1.2.1',
+480 silly addNameRange     '1.2.2',
+480 silly addNameRange     '1.2.3',
+480 silly addNameRange     '1.2.4',
+480 silly addNameRange     '1.2.5',
+480 silly addNameRange     '1.2.6',
+480 silly addNameRange     '1.2.7',
+480 silly addNameRange     '1.2.8',
+480 silly addNameRange     '1.2.9',
+480 silly addNameRange     '1.2.10',
+480 silly addNameRange     '1.2.11',
+480 silly addNameRange     '1.2.12',
+480 silly addNameRange     '1.2.13',
+480 silly addNameRange     '1.2.14',
+480 silly addNameRange     '1.2.15',
+480 silly addNameRange     '1.2.16',
+480 silly addNameRange     '1.2.17',
+480 silly addNameRange     '1.2.18',
+480 silly addNameRange     '1.2.19',
+480 silly addNameRange     '1.2.20',
+480 silly addNameRange     '1.2.21',
+480 silly addNameRange     '1.2.22',
+480 silly addNameRange     '1.2.23',
+480 silly addNameRange     '1.3.0-rc.5',
+480 silly addNameRange     '1.3.0',
+480 silly addNameRange     '1.3.1',
+480 silly addNameRange     '1.3.2',
+480 silly addNameRange     '1.3.3',
+480 silly addNameRange     '1.3.4-build.3588',
+480 silly addNameRange     '1.2.27',
+480 silly addNameRange     '1.3.4',
+480 silly addNameRange     '1.3.5',
+480 silly addNameRange     '1.3.6',
+480 silly addNameRange     '1.3.7',
+480 silly addNameRange     '1.2.28',
+480 silly addNameRange     '1.3.8',
+480 silly addNameRange     '1.4.0-beta.0',
+480 silly addNameRange     '1.3.9',
+480 silly addNameRange     '1.3.10',
+480 silly addNameRange     '1.4.0-beta.1',
+480 silly addNameRange     '1.4.0-beta.2',
+480 silly addNameRange     '1.3.11',
+480 silly addNameRange     '1.4.0-beta.3',
+480 silly addNameRange     '1.3.12',
+480 silly addNameRange     '1.3.13',
+480 silly addNameRange     '1.4.0-beta.4',
+480 silly addNameRange     '1.3.14',
+480 silly addNameRange     '1.4.0-beta.5',
+480 silly addNameRange     '1.4.0-beta.6',
+480 silly addNameRange     '1.3.15',
+480 silly addNameRange     '1.4.0-rc.0',
+480 silly addNameRange     '1.4.0-rc.1',
+480 silly addNameRange     '1.4.0-rc.2',
+480 silly addNameRange     '1.4.0',
+480 silly addNameRange     '1.3.16',
+480 silly addNameRange     '1.4.1',
+480 silly addNameRange     '1.4.2',
+480 silly addNameRange     '1.3.17',
+480 silly addNameRange     '1.4.3' ] ]
+481 verbose addNamed [ 'angular', '1.2.28' ]
+482 verbose addNamed [ '1.2.28', '1.2.28' ]
+483 silly lockFile 8bf3dbd2-angular-1-2-28 angular@1.2.28
+484 verbose lock angular@1.2.28 /home/ABC-OBJECTIF/cyprien.diot/.npm/8bf3dbd2-angular-1-2-28.lock
+485 silly lockFile 8db2777f-jshint-stylish-1-0-1 jshint-stylish@^1.0.1
+486 silly lockFile 8db2777f-jshint-stylish-1-0-1 jshint-stylish@^1.0.1
+487 silly lockFile 8bf3dbd2-angular-1-2-28 angular@1.2.28
+488 silly lockFile 8bf3dbd2-angular-1-2-28 angular@1.2.28
+489 silly lockFile d0f30f9a-angular-1-2-x angular@~1.2.x
+490 silly lockFile d0f30f9a-angular-1-2-x angular@~1.2.x
+491 error Error: version not found: angular-xeditable@0.1.8
+491 error     at /usr/lib/node_modules/npm/lib/cache/add-named.js:125:12
+491 error     at saved (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/get.js:167:7)
+491 error     at Object.oncomplete (fs.js:108:15)
+492 error If you need help, you may report this *entire* log,
+492 error including the npm and node versions, at:
+492 error     <http://github.com/npm/npm/issues>
+493 error System Linux 3.16.0-0.bpo.4-amd64
+494 error command "/usr/bin/node" "/usr/bin/npm" "install"
+495 error cwd /home/ABC-OBJECTIF/cyprien.diot/demoinstance/frontend
+496 error node -v v0.10.40
+497 error npm -v 1.4.28
+498 verbose exit [ 1, true ]
