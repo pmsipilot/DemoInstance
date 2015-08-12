@@ -1,0 +1,18 @@
+demoinstance:
+    build: .
+    volumes:
+        - ./config/:/etc/demoinstance/
+    ports:
+        - "8080:8080"
+    expose:
+        - "8080"
+    links:
+      - mysql
+mysql:
+  image: mysql:5.6
+  environment:
+    - MYSQL_ROOT_PASSWORD=password
+    - MYSQL_DATABASE=demo
+
+
+
