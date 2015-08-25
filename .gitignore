@@ -11,3 +11,4 @@ web/instance_image/*
 web/node_modules/
 web/public
 /*.sqlite
+*~

@@ -1,0 +1,22 @@
+demoinstance:
+    build: .
+    volumes:
+        - ./backend/demoinstance/:/opt/demoinstance/backend/demoinstance/
+        - ./frontend/:/opt/demoinstance/frontend/
+        - ./config/:/etc/demoinstance/
+        - ./ressources/supervisor:/etc/supervisor/conf.d
+        - ./ressources/dev_demoinstance:/usr/local/bin/demoinstance
+    ports:
+        - "8080:8080"
+    expose:
+        - "8080"
+    links:
+      - mysql
+mysql:
+  image: mysql:5.6
+  environment:
+    - MYSQL_ROOT_PASSWORD=password
+    - MYSQL_DATABASE=demo
+
+
+
