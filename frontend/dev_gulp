@@ -4,6 +4,21 @@ set -o errexit
 set -o pipefail
 set -o nounset
 
+function finish {
+    echo "Fixing file permissions: it might take some time"
+    if [ -d "/opt/demoinstance/frontend" ]; then
+	cd /opt/demoinstance/frontend
+	chown -R `stat -c "%u:%g" .` .
+    fi
+    if [ -d "/opt/demoinstance/backend" ]; then
+	cd /opt/demoinstance/backend
+	chown -R `stat -c "%u:%g" .` .
+    fi
+}
+
+
+trap finish EXIT
+
 npm install
 
 node_modules/gulp/bin/gulp.js dev
