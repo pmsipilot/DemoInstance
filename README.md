@@ -1,31 +1,81 @@
 # Project DemoInstance
-DemoInstance provides an interface to deploy instance of your project on an Openstack cloud. With this project your futur client can deploy an isolated instance for a defined time.
+DemoInstance is web interface offering on-demand virtual machines instances with lifetime limits.
 
 ## Interface example
 ![Image of Demoinstance](https://raw.githubusercontent.com/bewiwi/DemoInstance/gh-pages/demoinstance.gif)
 
-## Pre requisites
+## Dependencies
 
-* Python & Python devel & Python PIP
-* GCC
-* MySQL server / MySQL devel
 
-## Installation
+<img src="http://svgporn.com/logos/python.svg" alt="Python" width="64"> <img src="http://svgporn.com/logos/npm.svg" alt="Python" width="64"> <img src="http://svgporn.com/logos/gulp.svg" alt="Python" width="64">
+
+
+* Python 2.7
+* PIP
+* NodeJS & NPM
+* An underlying database system: 
+	* SQLite
+	* MySQL
+
+## Building and setting up
+
+In order to use DemoInstance, you can:
+
+* [Build](#building-and-setting-up), [configure](#configuration) and [run](#run) demoinstance yourself
+* Configure and [use a production docker image](#docker)
+
+### Install backend service
+
+In order to install DemoInstance backend service:
 
 ```
-# npm install -g bower
-# npm install -g grunt-cli
-$ git clone git@github.com:bewiwi/DemoInstance.git
-$ cd DemoInstance
-$ pip install -r requirement.txt
-$ cd web/
+$ git clone git@github.com:pmsipilot/demoinstance.git
+$ cd demoinstance/backend/
+$ sudo python2 ./setup.py install
+```
+
+### Prepare frontend sources
+
+In order to prepare frontend sources:
+
+```
+$ cd frontend
 $ npm install
-$ bower install
-$ grunt
-$ cd -
-$ cp config-dist.ini config.ini
-$ vim config.ini
+$ node_modules/gulp/bin/gulp.js
 ```
+
+#### Set up web server
+In this example, we'll be using [the nginx webserver](http://nginx.org/):
+
+* Install nginx (according to your operating system documentation)
+* Configure nginx virtualhost
+* Restart nginx
+
+Virtualhost example:
+```
+server {
+       listen 8080;
+       root /opt/demoinstance/frontend/;
+       index index.html;
+       location /api {
+                proxy_pass http://127.0.0.1:8081;
+       }
+       location / {
+                try_files $uri $uri/ =404;
+       }
+       location /instance_image/ {
+                alias /etc/demoinstance/instance_image/;
+                try_files $uri $uri/ =404;
+       }
+}
+```
+
+* In this example, the webserver is listening on port `8080`, frontend files are stored in `/opt/demoinstance/frontend`, and backend is listening on port `8081`.
+* All `/api` requests must be passed to demoinstance backend service 
+* `/instance_image`requests points to `/etc/demoinstance/instance_image/` in this example.
+* Other requests are fulfilled with previously prepared frontend source code files.
+
+Then, you must configure DemoInstance backend.
 
 ## Configuration
 
@@ -217,22 +267,30 @@ user_data:#cloud-config
 This is defined here : http://tools.ietf.org/html/rfc822.html on LONG HEADER FIELDS section
 
 
-## Run
+## Run Backend
 ```
-python demo.py
-```
-Or
-```
-./demo.sh start
+/usr/local/bin/demoinstance -c /etc/demoinstance/config.ini
 ```
 
+## Run w/ Docker
+
+There is also a Docker Production-ready image: https://hub.docker.com/r/pmsipilot/demoinstance/
+
+```
+docker run -v /path/to/config/and/instance_image:/etc/demoinstance/ -i pmsipilot/demoinstance
+```
+
+* `/etc/demoinstance/` must contain:
+	* `config.ini` file
+	* `instance_image` folder with instance images
+
 ## Init script
+
 ### Redhat/Centos
-Template for Centos is avaible in samples/
-Just link file to /etc/init.d and maybe add it to boot sequence
+Template for Centos is avaible in `ressources/rhel-init-demoinstance`.
+Just link file to /etc/init.d.
 ```
 ln -s /where/is/your/project /etc/init.d/demoinstance
-chkconfig demoinstance on
 ```
 Don't forget to add config file in /etc/sysconfig/demoinstance
 ```
@@ -255,11 +313,12 @@ If you want this you can do it and make me a PR
 If you want to contribute you're welcome. Just create issues or make some PR.
 
 ### Dev env
-A docker env was set to help you to dev. To start just configure a good config.ini and run
+The development environment is built w/ Docker on top of the production-ready image, with [docker-compose](https://docs.docker.com/compose/)
 ```
-fig up
+docker-compose up
 ```
-If you don't have docker you can directly install needed lib on your hosts, it works well to
+
+A supervisord process will listen for changes in frontend files, and changes to backend source code will be directly applied.
 
 ### Run test
 To run test just run this command on with an URL od demoinstance run with test/samples/config/config-fake.ini
