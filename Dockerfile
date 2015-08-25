@@ -1,5 +1,5 @@
 FROM ubuntu:14.04
-MAINTAINER PMSIpilot
+MAINTAINER Loïc PORTE
 RUN apt-get update && apt-get install -y git python python-dev\
  python-pip mysql-client libmysqlclient-dev nodejs npm\
   libldap2-dev libsasl2-dev libssl-dev nginx supervisor
