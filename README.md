@@ -21,8 +21,8 @@ DemoInstance is web interface offering on-demand virtual machines instances with
 
 In order to use DemoInstance, you can:
 
-* [Build](#building-and-setting-up), [configure](#configuration) and [run](#run) demoinstance yourself
-* Configure and [use a production docker image](#docker)
+* [Build](#building-and-setting-up), [configure](#configuration) and [run](#run-backend) demoinstance yourself
+* Configure and [use a production docker image](#docker-w-docker)
 
 ### Install backend service
 
