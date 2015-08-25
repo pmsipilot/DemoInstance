@@ -5,6 +5,7 @@ output = './public',
 fs = require('fs'),
 del = require('del'),
 uglify = require('gulp-uglify')
+exec = require('gulp-exec')
 ngAnnotate = require('gulp-ng-annotate');
 
 var config = {
@@ -27,6 +28,10 @@ var config = {
 	'script.js',
         'js/service/*.js',
         'js/controller/*.js'
+    ],
+
+    packageJsonEntry: [
+	'package.json'
     ],
 
     appCssEntry: [
@@ -65,7 +70,8 @@ var config = {
     ]
 };
 
-gulp.task('build', ['build/js/app', 'build/js/vendor', 'build/css/app', 'build/css/vendor', 'build/fonts/vendor', 'build/js/ngAnnotate', 'build/js/uglify']);
+gulp.task('build', ['build/js/app', 'build/js/vendor', 'build/css/app', 'build/css/vendor', 'build/fonts/vendor']);
+gulp.task('dev', ['clean', 'build', 'watch']);
 gulp.task('default', ['clean', 'build']);
 
 //Clean public
@@ -79,6 +85,7 @@ gulp.task('clean', function() {
 gulp.task('build/js/app', function() {
     gulp.src(config.appJsEntry)
         .pipe(concat(config.outputJSAppFile))
+        .pipe(ngAnnotate({ single_quotes: true }))
 	.pipe(concatutil.header(';(function(window, undefined){\n'))
 	.pipe(concatutil.footer("\n}(window));"))
         .pipe(gulp.dest(config.outputJSDir));
@@ -95,6 +102,8 @@ gulp.task('build/css/app', function() {
 gulp.task('build/js/vendor', function() {
     gulp.src(config.vendorsJsEntry)
         .pipe(concat(config.outputJSVendorsFile))
+        .pipe(ngAnnotate({ single_quotes: true }))
+	.pipe(uglify())
         .pipe(gulp.dest(config.outputJSDir));
 });
 
@@ -113,6 +122,7 @@ gulp.task('build/fonts/vendor', function () {
 gulp.task('build/js/ngAnnotate', function () {
     gulp.src(config.jsEntry)
         .pipe(ngAnnotate({ single_quotes: true }))
+	.pipe(uglify())
         .pipe(gulp.dest(config.outputJSDir));
 });
 
@@ -122,3 +132,12 @@ gulp.task('build/js/uglify', function () {
         .pipe(gulp.dest(config.outputJSDir));
 });
 
+gulp.task('build/npm', function () {
+    exec('npm install');
+});
+
+gulp.task('watch', function() {
+    gulp.watch(config.appJsEntry, ['build/js/app']);
+    gulp.watch(config.appCssEntry, ['build/css/app']);
+    gulp.watch(config.packageJsonEntry, ['build/npm']);
+});

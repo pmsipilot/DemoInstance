@@ -1,0 +1,10 @@
+#!/bin/bash
+
+set -o errexit
+set -o pipefail
+set -o nounset
+
+npm install
+
+node_modules/gulp/bin/gulp.js dev
+

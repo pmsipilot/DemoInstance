@@ -1,7 +1,11 @@
 demoinstance:
     build: .
     volumes:
+        - ./backend/demoinstance/:/opt/demoinstance/backend/demoinstance/
+        - ./frontend/:/opt/demoinstance/frontend/
         - ./config/:/etc/demoinstance/
+        - ./ressources/supervisor:/etc/supervisor/conf.d
+        - ./ressources/dev_demoinstance:/usr/local/bin/demoinstance
     ports:
         - "8080:8080"
     expose:

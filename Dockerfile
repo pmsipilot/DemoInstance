@@ -7,7 +7,7 @@ RUN ln -s /usr/bin/nodejs /usr/bin/node
 
 RUN rm -rf /etc/nginx/sites-available/* /etc/nginx/sites-enabled/*
 
-COPY ./ressources/nginx-server /etc/nginx/sites-available/default
+COPY ./ressources/nginx/nginx-server /etc/nginx/sites-available/default
 RUN ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
 RUN ln -sf /dev/stdout /var/log/nginx/access.log
 RUN ln -sf /dev/stderr /var/log/nginx/error.log
@@ -25,7 +25,7 @@ RUN node_modules/gulp/bin/gulp.js
 WORKDIR /opt/demoinstance/backend/
 RUN python setup.py install
 
-COPY ./ressources/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+COPY ./ressources/supervisor/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/supervisord.conf"]
 
