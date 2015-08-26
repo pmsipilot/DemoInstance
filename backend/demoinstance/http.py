@@ -259,10 +259,10 @@ class Handler(BaseHTTPRequestHandler, object):
             self.send_http_error(404, e.message)
         except (DemoExceptionErrorAuth, DemoExceptionInvalidOwner) as e:
             if self.config.security_type == 'email':
-                type = 'email'
+                errtype = 'email'
             else:
-                type = 'auth'
-            self.send_http_error(401, e.message, type)
+                errtype = 'auth'
+            self.send_http_error(401, e.message, errtype)
         except DemoExceptionToMuchInstanceImage as e:
             self.send_http_error(503, e.message, str(type(e)))
         except Exception as e:
@@ -308,10 +308,10 @@ class Handler(BaseHTTPRequestHandler, object):
             self.send_http_error(400, e.message)
         except (DemoExceptionErrorAuth, DemoExceptionInvalidOwner) as e:
             if self.config.security_type == 'email':
-                type = 'email'
+                errtype = 'email'
             else:
-                type = 'auth'
-            self.send_http_error(401, e.message, type)
+                errtype = 'auth'
+            self.send_http_error(401, e.message, errtype)
         except Exception as e:
             if self.config.dev:
                 raise
@@ -364,10 +364,10 @@ class Handler(BaseHTTPRequestHandler, object):
             self.send_http_error(400, e.message)
         except (DemoExceptionErrorAuth, DemoExceptionInvalidOwner) as e:
             if self.config.security_type == 'email':
-                type = 'email'
+                errtype = 'email'
             else:
-                type = 'auth'
-            self.send_http_error(401, e.message, type)
+                errtype = 'auth'
+            self.send_http_error(401, e.message, errtype)
         except Exception as e:
             if self.config.dev:
                 raise
@@ -394,10 +394,10 @@ class Handler(BaseHTTPRequestHandler, object):
             self.send_http_error(404, e.message)
         except (DemoExceptionErrorAuth, DemoExceptionInvalidOwner) as e:
             if self.config.security_type == 'email':
-                type = 'email'
+                errtype = 'email'
             else:
-                type = 'auth'
-            self.send_http_error(401, e.message, type)
+                errtype = 'auth'
+            self.send_http_error(401, e.message, errtype)
         except Exception as e:
             if self.config.dev:
                 raise
@@ -420,9 +420,9 @@ class Handler(BaseHTTPRequestHandler, object):
             self.write_cookie(COOKIE_SESSION_NAME, self.user.token)
         else:
             if self.config.security_type == 'email':
-                type = 'email'
+                errtype = 'email'
             else:
-                type = 'auth'
+                errtype = 'auth'
             raise DemoExceptionErrorAuth
             return False
         return True
