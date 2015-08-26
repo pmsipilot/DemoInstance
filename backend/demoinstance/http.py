@@ -315,7 +315,7 @@ class Handler(BaseHTTPRequestHandler, object):
         except Exception as e:
             if self.config.dev:
                 raise
-            self.send_http_error(500, e.message)
+            self.send_http_error(500, e.message, str(type(e)))
         return
 
     def do_POST(self):
