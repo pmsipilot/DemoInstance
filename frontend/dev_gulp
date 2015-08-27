@@ -10,10 +10,6 @@ function finish {
 	cd /opt/demoinstance/frontend
 	chown -R `stat -c "%u:%g" .` .
     fi
-    if [ -d "/opt/demoinstance/backend" ]; then
-	cd /opt/demoinstance/backend
-	chown -R `stat -c "%u:%g" .` .
-    fi
 }
 
 

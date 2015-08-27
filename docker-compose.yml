@@ -4,8 +4,9 @@ demoinstance:
         - ./backend/demoinstance/:/opt/demoinstance/backend/demoinstance/
         - ./frontend/:/opt/demoinstance/frontend/
         - ./config/:/etc/demoinstance/
-        - ./ressources/supervisor:/etc/supervisor/conf.d
-        - ./ressources/dev_demoinstance:/usr/local/bin/demoinstance
+        - ./ressources/supervisor_dev:/etc/supervisor/conf.d
+        - ./ressources/dev_demoinstance:/opt/demoinstance/dev_demoinstance
+        - ./ressources/dev_demoinstance.py:/opt/demoinstance/dev_demoinstance.py
     ports:
         - "8080:8080"
     expose:

@@ -1,9 +1,20 @@
-#!/usr/bin/python
+#!/bin/bash
 
-import sys
+set -o errexit
+set -o pipefail
+set -o nounset
 
-sys.path.insert(1, "/opt/demoinstance/backend/")
 
-from demoinstance.cli import cli_entrypoint
-print "DemoInstance Dev Environment"
-cli_entrypoint()
+function finish {
+    echo "Fixing file permissions: it might take some time"
+    if [ -d "/opt/demoinstance/backend/demoinstance" ]; then
+	cd /opt/demoinstance/backend/demoinstance
+	chown -R `stat -c "%u:%g" .` .
+    fi
+}
+
+
+trap finish EXIT
+
+
+python2 /opt/demoinstance/dev_demoinstance.py $@
