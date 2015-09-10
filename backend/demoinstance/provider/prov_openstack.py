@@ -77,6 +77,9 @@ class Openstack(DemoProv):
         if 'instance_prefix' in image_conf:
             instance_prefix = image_conf['instance_prefix']
 
+        nics = None
+        if 'network' in image_conf:
+            nics = [{"net-id": image_conf['network'], "v4-fixed-ip": ''}]
         user_data = None
         if 'user_data' in image_conf:
             user_data = image_conf['user_data']
@@ -93,6 +96,7 @@ class Openstack(DemoProv):
             image.id,
             flavor.id,
             userdata=user_data,
+            nics=nics,
             meta=meta
         )
         return self.__get_instance_info(instance)['id']
