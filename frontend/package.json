@@ -2,7 +2,7 @@
   "name": "demoninstance",
   "description": "Web interface for on-demand virtual machines instances deployment with lifetime limits.",
   "repository": "https://github.com/pmsipilot/demoinstance",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "dependencies": {
     "angular": "~1.2.x",
     "angular-cookies": "~1.2.x",

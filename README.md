@@ -154,8 +154,8 @@ region=regionOne
 | password | No | openstack password |
 | tenant | No | openstack tenant |
 | url | No | openstack keystone api url |
-| region | Yes | openstak region |
-
+| region | Yes | openstack region |
+| network | Yes | openstack network id |
 ### HTTP
 ```
 [HTTP]
