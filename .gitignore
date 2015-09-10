@@ -1,4 +1,3 @@
-Vagrantfile
 .vagrant
 /*.ini
 !config-dist.ini
