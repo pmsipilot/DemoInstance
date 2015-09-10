@@ -7,7 +7,7 @@ here = path.abspath(path.dirname(__file__))
 setup(
     name='demoinstance',
 
-    version='2.1.0',
+    version='2.1.1',
 
     description='Web interface for on-demand virtual machines instances deployment with lifetime limits.',
     url='https://github.com/pmsipilot/demoinstance',
