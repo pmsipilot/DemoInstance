@@ -1,5 +1,6 @@
 #!/bin/bash
 
+sudo apt-get update
 sudo apt-get install -y nginx python-pip supervisor python-dev libldap2-dev libsasl2-dev libmysqlclient-dev screen nodejs npm
 (cd /opt/demoinstance/backend && sudo python setup.py install)
 sudo cp /opt/demoinstance/ressources/supervisor_dev/*.conf /etc/supervisor/conf.d/
