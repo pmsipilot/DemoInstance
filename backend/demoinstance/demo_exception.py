@@ -18,7 +18,7 @@ class DemoExceptionBadConfigValue(DemoException):
 
 class DemoExceptionToMuchInstanceImage(DemoException):
     def __init__(self):
-        self.value = "To much instances"
+        self.value = "To many instances"
         self.message = self.value
 
     def __str__(self):

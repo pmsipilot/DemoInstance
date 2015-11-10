@@ -29,7 +29,7 @@ class AuthLdap(DemoAuth):
             return False
 
         if len(res) > 1:
-            raise Exception("To much user returned")
+            raise Exception("To many users returned")
         if len(res) < 1:
             raise ldap.INVALID_CREDENTIALS
 
