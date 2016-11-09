@@ -121,6 +121,14 @@ class Handler(BaseHTTPRequestHandler, object):
         self.wfile.write(json.dumps(instances))
         return
 
+    def active_instances_info(self):
+        instances = self.demo.get_active_instance_database()
+        self.headers_to_send['Content-type'] = 'application/json'
+        self.send_all_header(200)
+        self.wfile.write(json.dumps(instances))
+        return
+
+    
     def pool_instances_info(self):
         instances = self.demo.get_pooled_instance_database()
         self.headers_to_send['Content-type'] = 'application/json'
@@ -249,7 +257,9 @@ class Handler(BaseHTTPRequestHandler, object):
             if self.path == "/api/allinstance":
                 self.all_instances_info()
                 return
-
+            if self.path == "/api/activeinstance":
+                self.active_instances_info()
+                return
             if self.path == "/api/poolinstance":
                 self.pool_instances_info()
                 return

@@ -15,7 +15,7 @@ demoApp.controller('adminController', function($scope, $http, $location, instanc
             }
         }, {
             getData: function($defer, params) {
-                $http.get('/api/allinstance').
+                $http.get('/api/activeinstance').
                 success(function(data) {
                     // use build-in angular filter
                     var filteredData = params.filter() ?
