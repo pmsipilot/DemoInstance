@@ -148,7 +148,8 @@ class Demo():
 
     def instance_is_up(self, instance_id):
         if self.provider.instance_is_up(instance_id):
-            self.database_insert_server(instance_id, 'UP')
+            self.database_insert_server(instance_id, 'UP',
+                                        ip=self.provider.get_instance_ip(instance_id))
             return True
         return False
 
@@ -173,7 +174,7 @@ class Demo():
     # DATABASE #
     def database_insert_server(self, instance_id, status=None,
                                launched_at=None, life_time=None,
-                               image_key=None, token=None):
+                               image_key=None, token=None, ip=None):
         logging.debug('Insert instance %s', instance_id)
 
         query = self.database.query(Instance).filter(
@@ -189,6 +190,9 @@ class Demo():
         data_instance.provider_id = instance_id
         data_instance.status = status
 
+        if ip:
+            data_instance.ip = ip
+        
         if image_key:
             data_instance.image_key = image_key
 
@@ -377,6 +381,7 @@ class Demo():
                 'id': instance.provider_id,
                 'status': instance.status,
                 'type': instance.image_key,
+                'ip': instance.ip,
                 'launched_at': str(instance.launched_at),
                 'life_time': instance.life_time,
                 'user': login,
