@@ -23,6 +23,7 @@ RUN node_modules/gulp/bin/gulp.js
 
 
 WORKDIR /opt/demoinstance/backend/
+RUN pip install --upgrade setuptools pip
 RUN python setup.py install
 
 COPY ./ressources/supervisor/supervisord.conf /etc/supervisor/conf.d/supervisord.conf

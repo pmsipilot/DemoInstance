@@ -365,6 +365,26 @@ class Demo():
             })
         return info
 
+    def get_active_instance_database(self):
+        query = self.database.query(Instance, User.login)\
+            .join(User, Instance.token == User.token)\
+            .filter(Instance.status != 'DELETED')\
+            .order_by(desc(Instance.id))
+
+        info = []
+        for instance, login in query.all():
+            info.append({
+                'id': instance.provider_id,
+                'status': instance.status,
+                'type': instance.image_key,
+                'launched_at': str(instance.launched_at),
+                'life_time': instance.life_time,
+                'user': login,
+                'dead_time': instance.get_dead_time()
+            })
+        return info
+
+    
     def get_pooled_instance_database(self, image_key=None):
         query = self.database.query(Instance)\
             .filter(Instance.status == 'POOL')
