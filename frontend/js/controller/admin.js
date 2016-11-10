@@ -71,6 +71,14 @@ demoApp.controller('adminController', function($scope, $http, $location, instanc
         );
     };
 
+    $scope.forgetInstance = function(id) {
+        instanceService.forgetInstance(
+            id,
+            $scope.refresh,
+            errorCallback
+        );
+    };
+    
     $scope.addTimeInstance = function(instance) {
         instanceService.setTimeInstance(
             instance.id,

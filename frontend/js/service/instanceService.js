@@ -9,6 +9,14 @@ demoApp.factory('instanceService', function($http, $location) {
         success(success).
         error(fail);
     };
+
+    var forgetInstance = function(id, success, fail) {
+        if (typeof(success)==='undefined') success = empty;
+        if (typeof(fail)==='undefined') fail = empty;
+        $http.get('/api/forget/instance/'+ id).
+        success(success).
+        error(fail);
+    };
     
     var addTimeInstance = function(id, time, success, fail) {
         if (typeof(success)==='undefined') success = empty;
@@ -37,6 +45,7 @@ demoApp.factory('instanceService', function($http, $location) {
     return {
         deleteInstance : deleteInstance,
         addTimeInstance : addTimeInstance,
-        setTimeInstance : setTimeInstance
+        setTimeInstance : setTimeInstance,
+	forgetInstance : forgetInstance
     };
 });

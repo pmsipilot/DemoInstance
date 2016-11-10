@@ -55,6 +55,10 @@ class Handler(BaseHTTPRequestHandler, object):
         f.close()
         return
 
+    def detach_instance(self, instance):
+        self.demo.detach_instance(instance)
+        self.send_http_message()
+    
     def instance_create(self, image_key, time=None):
         id = self.demo.create_instance(
             image_key,
@@ -244,6 +248,14 @@ class Handler(BaseHTTPRequestHandler, object):
                 self.instance_info(match.group(1))
                 return
 
+            match = re.match("/api/forget/instance/(.*)", self.path)
+            if match:
+                if not self.demo.auth.is_admin(self.user.login):
+                    self.send_http_error(404, 'No action')
+                    return
+                self.detach_instance(match.group(1))
+                return
+            
             match = re.match("/api/image/(.*)", self.path)
             if match:
                 self.image_info(match.group(1))

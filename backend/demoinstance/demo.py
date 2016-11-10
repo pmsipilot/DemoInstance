@@ -324,6 +324,10 @@ class Demo():
         else:
             return False
 
+    def detach_instance(self, instance):
+        self.database_insert_server(instance, status='DELETED')
+        
+        
     def check_user_own_instance_type(self, token, image_key):
         query = self.database.query(Instance).filter(
             Instance.image_key == image_key,

@@ -91,6 +91,7 @@
             NEW_INSTANCE: 'Instances',
             CREATING_INSTANCE: 'Creating instance',
             DESTROYING_INSTANCE: 'Your instance will be permanently destroyed',
+            FORGETTING_INSTANCE: 'Your instance will be detached and will not be destroyed automatically',
             STARTING_INSTANCE: 'Starting instance',
             STARTING_SYSTEM: 'Starting system',
             CREATE_INSTANCE_OF: 'Create instance of ',
@@ -107,6 +108,7 @@
             SUBMIT: 'Submit',
             CANCEL: 'Cancel',
             DESTROY: 'Destroy instance',
+            FORGET: 'Forgetting instance',
 
             LOGIN:'Please log in',
             DISCONNECT: 'disconnect',
@@ -134,6 +136,7 @@
             NEW_INSTANCE: 'Instances',
             CREATING_INSTANCE: 'Cr&eacute;ation de votre environnement de d&eacute;monstration',
             DESTROYING_INSTANCE: 'Votre instance sera détruite pour toujours',
+            FORGETTING_INSTANCE: 'Votre instance sera détachée et ne sera pas supprimée automatiquement',
             STARTING_INSTANCE: 'D&eacute;marrage de votre environnement de d&eacute;monstration',
             STARTING_SYSTEM: 'Configuration de votre environnement de d&eacute;monstration',
             CREATE_INSTANCE_OF: 'Cr&eacute;ation de l\'instance ',
@@ -150,6 +153,7 @@
             SUBMIT: 'Valider',
             CANCEL: 'Annuler',
             DESTROY: 'Détruire l\'instance',
+            FORGET: 'Détacher l\'instance',
 
             LOGIN:'Connectez vous',
             DISCONNECT: 'Déconnection',
