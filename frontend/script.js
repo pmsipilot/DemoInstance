@@ -119,6 +119,7 @@
             INSTANCE_LAUNCHED_AT: 'Startup time',
             INSTANCE_LIFE_TIME: 'Life time  (min.)',
             INSTANCE_DEAD_TIME: 'Time before remove (min.)',
+            INSTANCE_IP: 'IP',
             INSTANCE_ACTIONS: 'Actions',
 
             INSTANCE_TYPE : 'Type',
@@ -161,6 +162,7 @@
             INSTANCE_LAUNCHED_AT: 'Jour / heure de démarrage',
             INSTANCE_LIFE_TIME: 'Durée de vie (min.)',
             INSTANCE_DEAD_TIME: 'Durée avant destruction (min.)',
+            INSTANCE_IP: 'IP',
             INSTANCE_ACTIONS: 'Actions',
 
             INSTANCE_TYPE : 'Type',

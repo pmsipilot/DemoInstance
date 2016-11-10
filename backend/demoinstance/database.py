@@ -38,6 +38,7 @@ class Instance(Base):
     name = Column(String(255))
     image_key = Column(String(255))
     status = Column(String(255), nullable=False)
+    ip = Column(String(255), nullable=True)
     launched_at = Column(types.DATETIME)
     life_time = Column(types.Integer, nullable=False)
     token = Column(String(255), nullable=False)

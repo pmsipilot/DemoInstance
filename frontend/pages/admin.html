@@ -49,6 +49,13 @@
                      ng-click="tableParams.sorting({'dead_time' : tableParams.isSortBy('dead_time', 'asc') ? 'desc' : 'asc'})">
                     {{ 'INSTANCE_DEAD_TIME'|translate }}
                 </th>
+                <th  class="sortable" ng-class="{
+                    'sort-asc': tableParams.isSortBy('ip', 'asc'),
+                    'sort-desc': tableParams.isSortBy('ip', 'desc')
+                  }"
+                     ng-click="tableParams.sorting({'ip' : tableParams.isSortBy('ip', 'asc') ? 'desc' : 'asc'})">
+                    {{ 'INSTANCE_IP'|translate }}
+                </th>
                 <th>
                     {{ 'INSTANCE_ACTIONS'|translate }}
                 </th>
@@ -62,6 +69,7 @@
                 <td data-title="'launched_at'" sortable="'launched_at'">{{ instance.launched_at }}</td>
                 <td data-title="'life_time'" sortable="'life_time'"> <a href="#" editable-number="instance.life_time" onaftersave="addTimeInstance(instance)">{{ instance.life_time }}</a></td>
                 <td data-title="'dead_time'" sortable="'dead_time'">{{ instance.dead_time }}</td>
+		<td data-title="'ip'" sortable="'dead_time'">{{ instance.ip }}</td>
                 <td data-title="'action'">
                     <span ng-show="instance.status != 'DELETED'" ng-click="setInstance(instance)" data-toggle="modal" data-target="#modalDestroy" class="glyphicon glyphicon-remove"></span>
                     <span ng-show="instance.status != 'DELETED'" ng-click="go_to_instance(instance)" class="glyphicon glyphicon glyphicon-eye-open"></span>
