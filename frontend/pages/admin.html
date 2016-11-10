@@ -73,6 +73,7 @@
                 <td data-title="'action'">
                     <span ng-show="instance.status != 'DELETED'" ng-click="setInstance(instance)" data-toggle="modal" data-target="#modalDestroy" class="glyphicon glyphicon-remove"></span>
                     <span ng-show="instance.status != 'DELETED'" ng-click="go_to_instance(instance)" class="glyphicon glyphicon glyphicon-eye-open"></span>
+		    <span ng-show="instance.status != 'DELETED'" ng-click="setInstance(instance)" data-toggle="modal" data-target="#modalForget" class="glyphicon glyphicon glyphicon-log-out"></span>
                 </td>
             </tr>
         </tbody>
@@ -135,6 +136,24 @@
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">{{ 'CANCEL' | translate }}</button>
                     <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="deleteInstance(instance.id);">{{ 'SUBMIT' | translate }}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="in modal fade" id="modalForget" tabindex="-1" role="dialog" aria-labelledby="myForgetModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myForgetModalLabel">{{ 'FORGET' | translate }}</h4>
+                </div>
+                <div class="modal-body">
+                {{ 'FORGETTING_INSTANCE'|translate }}.
+                {{ 'ARE_YOU_SURE' | translate}}
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">{{ 'CANCEL' | translate }}</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="forgetInstance(instance.id);">{{ 'SUBMIT' | translate }}</button>
                 </div>
             </div>
         </div>
