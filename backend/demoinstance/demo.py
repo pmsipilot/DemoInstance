@@ -6,7 +6,7 @@ import datetime
 from demo_exception import *
 from demo_mail import DemoMail
 import os
-
+import ssl
 
 class Demo():
     def __init__(self, config):
@@ -162,8 +162,10 @@ class Demo():
             instance_id
         )
         try:
-            code = urllib2.urlopen(url).getcode()
-        except:
+            context = ssl._create_unverified_context()
+            code = urllib2.urlopen(url, context=context).getcode()
+        except Exception as e:
+            logging.exception('Cannot reach instance %s', url)
             return False
 
         if code == 200:
