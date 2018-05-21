@@ -1,4 +1,4 @@
-FROM ubuntu:14.04
+FROM ubuntu:16.04
 MAINTAINER Loïc PORTE
 RUN apt-get update && apt-get install -y git python python-dev\
  python-pip mysql-client libmysqlclient-dev nodejs npm\

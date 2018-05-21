@@ -24,17 +24,19 @@ body{
 /* Menu */
 .navbar-default{
     background-color:#ffffff ;
-    border-top: 2px solid #C1AB80 ;
+    border-top: 2px solid #83c558 ;
     border-bottom: 1px solid #f2f2f2 ;
 }
 .logo {
+    height: 80px;
+    width: 80px;
     padding: 10px;
 }
 .navbar-default .navbar-nav > li > a {
     margin-top: 22px;
 }
 .fa-sign-out, .fa-shield, .fa-list-alt, .fa-lock {
-    color:#C1AB80;
+    color:#437284;
 }
 
 .jumbotron p {
@@ -44,7 +46,7 @@ body{
 }
 #DescImage{
     font-family: 'Roboto', sans-serif;
-    color:#c1AB80;
+    color:#2f78a2;
     font-weight: 300;
     float:left;
 }
@@ -77,7 +79,7 @@ body{
 span.glyphicon.glyphicon-time {
     position: relative;
     top: 3px;
-    color:#c1ab80;
+    color:#437284;
 }
 p.ng-binding {
 color: #6E6E6E;
@@ -94,13 +96,13 @@ color: #6E6E6E;
     overflow: hidden;
 }
 
-a.ng-binding{color: #C1AB80;font-weight: 500;}
-.Author{color: #c1AB80;}
-.Author:hover{color: #c1AB80;}
+a.ng-binding{color: #437284;font-weight: 500;}
+.Author{color: #437284;}
+.Author:hover{color: #437284;}
 /*Index*/
 /* Bloc instance */
 .well{
-    border-bottom: 2px solid #c1AB80 ;
+    border-bottom: 2px solid #83c558 ;
     border-radius: 8px;
     background-color: #ffffff ;
     opacity:0.8;
@@ -116,8 +118,8 @@ a.ng-binding{color: #C1AB80;font-weight: 500;}
 /*Instance*/
 .btn{
     background: #ffffff;
-    border-color: #c1AB80 ;
-    color: #c1AB80;
+    border-color: #437284 ;
+    color: #437284;
     font-weight: 300;
     font-family: 'Roboto', sans-serif;
     border-radius:0;
@@ -131,7 +133,7 @@ a.ng-binding{color: #C1AB80;font-weight: 500;}
 }
 
 .btn:hover{
-    background: #c1AB80;
+    background: #437284;
     color:white;
 }
 .mr3{
@@ -152,7 +154,7 @@ font-weight: 500;
     color: #5C80AB;
 }
 .fa-refresh{
-    color: #c1AB80;
+    color: #437284;
 }
 
 #warning {
