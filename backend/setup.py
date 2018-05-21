@@ -26,7 +26,7 @@ setup(
 
     keywords='demo virtual machines deployment web',
     packages=find_packages(exclude=['contrib', 'docs', 'tests*']),
-    install_requires=['python-novaclient', 'sqlalchemy', 'mysql-python', 'python-ldap'],
+    install_requires=['python-novaclient==7.1.0', 'sqlalchemy', 'mysql-python', 'python-ldap'],
     package_data={
     },
     extras_require={
