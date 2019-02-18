@@ -405,10 +405,15 @@ class Demo():
 
         info = []
         for instance in query.all():
+            if instance.ip is None and self.provider.instance_is_up(instance.provider_id):
+                instance.ip = self.provider.get_instance_ip(instance.provider_id)
+                self.database_insert_server(instance.provider_id, 'POOL',
+                                            ip=instance.ip)
             info.append({
                 'id': instance.provider_id,
                 'status': instance.status,
                 'type': instance.image_key,
+                'ip': instance.ip,
                 'launched_at': str(instance.launched_at),
                 'life_time': instance.life_time,
                 'dead_time': instance.get_dead_time()
