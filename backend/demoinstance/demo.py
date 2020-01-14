@@ -1,3 +1,4 @@
+# coding: utf-8
 from database import DemoData, Instance, User
 from sqlalchemy import desc
 import logging
@@ -256,6 +257,7 @@ class Demo():
             total_time = image['time_max']
 
         data_instance.life_time = total_time
+        data_instance.user_alerted = False
         self.database.merge(data_instance)
         self.database.commit()
         return data_instance.life_time
@@ -268,6 +270,7 @@ class Demo():
         data_instance = query.first()
 
         data_instance.life_time = time
+        data_instance.user_alerted = False
         self.database.merge(data_instance)
         self.database.commit()
         return data_instance.life_time
@@ -291,7 +294,7 @@ class Demo():
         self.database.merge(user)
         self.database.commit()
         return user
-
+    
     def get_user_by_token(self, token):
         query = self.database.query(User).filter(
             User.token == token
@@ -300,6 +303,15 @@ class Demo():
             return False
         return query.first()
 
+    def update_slack_identifier(self, token, slack_identifier):
+        user = self.get_user_by_token(token)
+        if user is False:
+            return False
+        user.slack_identifier = slack_identifier
+        self.database.merge(user)
+        self.database.commit()
+        return user
+    
     def update_user_last_connection(self, login):
         user = self.database.query(User).filter(
             User.login == login
@@ -329,6 +341,30 @@ class Demo():
     def detach_instance(self, instance):
         self.database_insert_server(instance, status='DELETED')
         
+    def warning_user(self, instance, deleted=False):
+        if instance.user_alerted and not deleted:
+            return False
+        if instance.token is None:
+            return False
+        query = self.database.query(User).filter(
+            User.token == instance.token
+        )
+        user = query.first()
+        if user.slack_identifier is None or user.slack_identifier == '':
+            return False
+        image = self.config.images[instance.image_key]
+        message=':wave: Instance https://{} {}'.format(instance.ip, image['name'])
+        if deleted:
+            message = message + ' :boom: *détruite* !'
+        else:
+            message = message + ' :warning: Destruction dans moins de *{} minutes*.'.format(self.config.user_alert_delay)
+        from slackclient import SlackClient
+        slack_client = SlackClient(self.config.user_alert_slack_token)
+        slack_client.api_call("chat.postMessage", channel='@'+user.slack_identifier, text=message)
+        instance.user_alerted = True
+        self.database.merge(instance)
+        self.database.commit()
+        return True
         
     def check_user_own_instance_type(self, token, image_key):
         query = self.database.query(Instance).filter(

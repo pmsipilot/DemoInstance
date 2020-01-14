@@ -34,6 +34,13 @@ class DemoConfig():
         else:
             self.dev = False
 
+        if self.config.has_option("DEFAULT", "user_alert_enabled"):
+            self.user_alert_enabled = self.config.getboolean("DEFAULT", "user_alert_enabled")
+            self.user_alert_delay = self.config.getint("ALERT", "delay")
+            self.user_alert_slack_token = self.config.get("ALERT", "slack_token")
+        else:
+            self.user_alert_enabled = False
+            
         # HTTP
         self.http_port = self.config.getint("HTTP", "port")
 

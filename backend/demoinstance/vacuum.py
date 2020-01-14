@@ -24,8 +24,10 @@ class Vacuum(threading.Thread):
         logging.debug("%s count", query.count())
         instances = demo.provider.get_instances()
         for data_instance in query.all():
+            if self.config.user_alert_enabled and data_instance.get_dead_time() < self.config.user_alert_delay:
+                demo.warning_user(data_instance, data_instance.get_dead_time() == -1)
             if data_instance.get_dead_time() == -1:
-                logging.info('%s is to old', data_instance.provider_id)
+                logging.info('%s is too old', data_instance.provider_id)
                 demo.database_remove_server(data_instance.provider_id)
 
             on_cloud = False

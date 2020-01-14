@@ -2,7 +2,7 @@ FROM ubuntu:16.04
 MAINTAINER Loïc PORTE
 RUN apt-get update && apt-get install -y git python python-dev\
  python-pip mysql-client libmysqlclient-dev nodejs npm\
-  libldap2-dev libsasl2-dev libssl-dev nginx supervisor
+  libldap2-dev libsasl2-dev libssl-dev nginx supervisor gcc
 RUN ln -s /usr/bin/nodejs /usr/bin/node
 
 RUN rm -rf /etc/nginx/sites-available/* /etc/nginx/sites-enabled/*
@@ -23,7 +23,8 @@ RUN node_modules/gulp/bin/gulp.js
 
 
 WORKDIR /opt/demoinstance/backend/
-RUN pip install --upgrade setuptools pip
+RUN pip install --upgrade pip
+RUN pip install --upgrade setuptools
 RUN python setup.py install
 
 COPY ./ressources/supervisor/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
