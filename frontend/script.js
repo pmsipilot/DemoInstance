@@ -56,6 +56,10 @@
                 templateUrl : 'pages/admin.html'
             })
 
+            .when('/profile', {
+                templateUrl : 'pages/profile.html'
+            })
+	    
             .when('/instance/:image_name', {
                 templateUrl : 'pages/instance.html'
             })
@@ -114,9 +118,13 @@
             DISCONNECT: 'disconnect',
             ADMINISTRATION:'Administration',
             LIST_INSTANCE:'History',
+	    PROFILE: 'Alerting profile',
             EMAIL_SEND:'SEND',
             EMAIL_INFO:'An email will be send with your link',
             RETURN_HOME : 'Return Home',
+
+	    PROFILE_SAVED: 'Profile saved',
+	    PROFILE_SLACK: 'Be warned before your instance is terminated',
 
             INSTANCE_LAUNCHED_AT: 'Startup time',
             INSTANCE_LIFE_TIME: 'Life time  (min.)',
@@ -159,9 +167,13 @@
             DISCONNECT: 'Déconnection',
             ADMINISTRATION:'Administration',
             LIST_INSTANCE:'Historique',
+	    PROFILE: 'Alertes',
             EMAIL_SEND:'Envoyer',
             EMAIL_INFO:'Un email va vous être envoyé avec votre lien pour vous connecter',
             RETURN_HOME : 'Retourner à l\' accueil',
+
+	    PROFILE_SAVED: 'Profil sauvegardé',
+	    PROFILE_SLACK: 'Soyez prévenu par slack avant la disparition de vos instances',
 
             INSTANCE_LAUNCHED_AT: 'Jour / heure de démarrage',
             INSTANCE_LIFE_TIME: 'Durée de vie (min.)',

@@ -42,6 +42,7 @@ class Instance(Base):
     launched_at = Column(types.DATETIME)
     life_time = Column(types.Integer, nullable=False)
     token = Column(String(255), nullable=False)
+    user_alerted = Column(types.Boolean, default=False)
 
     def get_dead_time(self):
         delta = (
@@ -69,6 +70,7 @@ class User(Base):
     token = Column(String(255), primary_key=True)
     login = Column(String(255), unique=True)
     last_connection = Column(types.DATETIME)
+    slack_identifier= Column(String(255), nullable=True)
 
     def generate_token(self):
         self.token = str(uuid.uuid4())

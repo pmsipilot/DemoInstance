@@ -101,6 +101,7 @@ class Handler(BaseHTTPRequestHandler, object):
         info = {
             'token': self.user.token,
             'login': self.user.login,
+            'slack_identifier': self.user.slack_identifier,
             'admin': is_admin
         }
         self.headers_to_send['Content-type'] = 'application/json'
@@ -357,6 +358,12 @@ class Handler(BaseHTTPRequestHandler, object):
             if not self.cookie_session():
                 return
 
+            if self.path == '/api/user/slack_identifier':
+                if 'slack_identifier' in put_vars:
+                    self.demo.update_slack_identifier(self.user.token, put_vars['slack_identifier'])
+                    self.send_http_message(200, 'ok')
+                    return                    
+            
             match = re.match("/api/instance", self.path)
             if match:
                 if 'id' in put_vars:
