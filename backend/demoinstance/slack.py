@@ -19,7 +19,7 @@ class Slack():
     def get_userid(self, identifier):
         if self.users_list is None:
             return False
-        user = next((user for user in self.users_list if user["name"] == identifier), None)
+        user = next((user for user in self.users_list if user['profile']['display_name_normalized'] == identifier), None)
         return user['id'] if user else False
         
     def send_alert(self, identifier, message):

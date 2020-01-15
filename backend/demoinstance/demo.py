@@ -350,7 +350,7 @@ class Demo():
             User.token == instance.token
         )
         user = query.first()
-        if user.slack_identifier is None or user.slack_identifier == '':
+        if user is None or user.slack_identifier is None or user.slack_identifier == '':
             return False
         image = self.config.images[instance.image_key]
         message=self.config.user_message.format(instance.ip, image['name'])
