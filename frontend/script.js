@@ -172,7 +172,7 @@
             EMAIL_INFO:'Un email va vous être envoyé avec votre lien pour vous connecter',
             RETURN_HOME : 'Retourner à l\' accueil',
 
-	    PROFILE_SAVED: 'Profile sauvegardé',
+	    PROFILE_SAVED: 'Profil sauvegardé',
 	    PROFILE_SLACK: 'Soyez prévenu par slack avant la disparition de vos instances',
 
             INSTANCE_LAUNCHED_AT: 'Jour / heure de démarrage',
