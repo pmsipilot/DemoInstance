@@ -353,11 +353,11 @@ class Demo():
         if user.slack_identifier is None or user.slack_identifier == '':
             return False
         image = self.config.images[instance.image_key]
-        message=':wave: Instance https://{} {}'.format(instance.ip, image['name'])
+        message=self.config.user_message.format(instance.ip, image['name'])
         if deleted:
-            message = message + ' :boom: *détruite* !'
+            message = message + self.config.user_message_dead
         else:
-            message = message + ' :warning: Destruction dans moins de *{} minutes*.'.format(self.config.user_alert_delay)
+            message = message + self.config.user_message_warning.format(self.config.user_alert_delay)
         from slackclient import SlackClient
         slack_client = SlackClient(self.config.user_alert_slack_token)
         slack_client.api_call("chat.postMessage", channel='@'+user.slack_identifier, text=message)

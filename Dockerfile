@@ -2,7 +2,7 @@ FROM ubuntu:16.04
 MAINTAINER Loïc PORTE
 RUN apt-get update && apt-get install -y git python python-dev\
  python-pip mysql-client libmysqlclient-dev nodejs npm\
-  libldap2-dev libsasl2-dev libssl-dev nginx supervisor gcc
+  libldap2-dev libsasl2-dev libssl-dev nginx supervisor
 RUN ln -s /usr/bin/nodejs /usr/bin/node
 
 RUN rm -rf /etc/nginx/sites-available/* /etc/nginx/sites-enabled/*
