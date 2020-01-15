@@ -3,6 +3,7 @@ from demo_config import DemoConfig
 from demo import Demo
 import threading
 from time import sleep
+from slack import Slack
 import logging
 
 
@@ -10,6 +11,7 @@ class Vacuum(threading.Thread):
     def __init__(self):
         self.config = DemoConfig()
         self.stop = False
+        self.slack = Slack(self.config)
         threading.Thread.__init__(self)
 
     def check_old_instance(self):
@@ -25,7 +27,7 @@ class Vacuum(threading.Thread):
         instances = demo.provider.get_instances()
         for data_instance in query.all():
             if self.config.user_alert_enabled and data_instance.get_dead_time() < self.config.user_alert_delay:
-                demo.warning_user(data_instance, data_instance.get_dead_time() == -1)
+                demo.warning_user(data_instance, self.slack, data_instance.get_dead_time() == -1)
             if data_instance.get_dead_time() == -1:
                 logging.info('%s is too old', data_instance.provider_id)
                 demo.database_remove_server(data_instance.provider_id)
@@ -42,10 +44,14 @@ class Vacuum(threading.Thread):
                 )
                 demo.database_remove_server(data_instance.provider_id)
 
+    def gather_data(self):
+        self.slack.refresh_userlist()
+                
     def run(self):
         time_between_vacuum = 60
         while True:
             try:
+                self.gather_data()
                 self.check_old_instance()
             except Exception as e:
                 if self.config.dev:

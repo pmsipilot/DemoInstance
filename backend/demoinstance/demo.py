@@ -341,7 +341,7 @@ class Demo():
     def detach_instance(self, instance):
         self.database_insert_server(instance, status='DELETED')
         
-    def warning_user(self, instance, deleted=False):
+    def warning_user(self, instance,  messager, deleted=False):
         if instance.user_alerted and not deleted:
             return False
         if instance.token is None:
@@ -358,9 +358,7 @@ class Demo():
             message = message + self.config.user_message_dead
         else:
             message = message + self.config.user_message_warning.format(self.config.user_alert_delay)
-        from slackclient import SlackClient
-        slack_client = SlackClient(self.config.user_alert_slack_token)
-        slack_client.api_call("chat.postMessage", channel='@'+user.slack_identifier, text=message)
+        messager.send_alert(user.slack_identifier, message)
         instance.user_alerted = True
         self.database.merge(instance)
         self.database.commit()
