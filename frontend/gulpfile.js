@@ -14,9 +14,9 @@ var config = {
     outputCssDir: output + '/css',
     outputFontsDir: output + '/fonts',
 
-    outputJSAppFile: 'app.js',
+    outputJSAppFile: 'app-2020.js',
 
-    outputJSVendorsFile: 'vendor.js',
+    outputJSVendorsFile: 'vendor-2020.js',
 
     outputVendorsCssFile: 'vendor.css',
 
